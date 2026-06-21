@@ -153,4 +153,4 @@ GitHub: [@Fathoni89](https://github.com/Fathoni89)
 
 ## Acknowledgments
 
-Supervisory team — Prof. Dr. Ema Utami, Prof. Dr. Kusrini, Dr. Ferry Wahyu Wibowo — and examiner Dr. M. Hanafi; and Universitas Sebelas April for institutional data access.
+Supervisory team — Prof. Dr. Ema Utami, S.Si.,M.Kom, Prof. Dr. Kusrini, M.Kom, Dr. Ferry Wahyu Wibowo, S.Si.,M.Cs. — and examiner Dr. Andi Sunyoto, M.Kom, M. Hanafi, Ph.D.; and Universitas Sebelas April for institutional data access.
