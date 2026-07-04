@@ -100,7 +100,7 @@ All experiments use a fixed seed (`random_state = 42`) for reproducibility.
 - **Feature Stability Score (FSS)**, the novel explainability metric introduced in this cycle, holds at **100% on BGL across every configuration**, stays **100% on HDFS for M0–M2 and M4** (dipping to 66.7% for Random Forest at M3), and ranges **81.8–100% on CICIDS2018** — i.e., SHAP explanations stay largely consistent even as the architecture changes.
 - Honest trade-off: augmentation is not uniformly positive — on BGL, XGBoost's noise robustness briefly collapses to **F1 = 0 at M2/M3** before recovering at M4 with SMOTE rebalancing, and on UNSW-NB15, FSS is noticeably weaker (**42.9–81.8%**) and cross-model SHAP overlap stays modest (**33–54%** throughout), showing the two models don't always agree on *why* a case is flagged.
 
-![F1 degradation under S2 noise, M0–M4 across all four datasets](figures/cycle2_noise_degradation.png)
+![F1 degradation under S2 noise, M0–M4 across all four datasets](cycle2_noise_degradation.png)
 *Generated from `results/all_results_complete.json` — left: XGBoost, right: Random Forest. The flat line at F1=0 is BGL/XGBoost at M2–M3, the trade-off noted above.*
 
 **Cycle 3 — ER-CyRIS on institutional logs (SIUTER, deduplicated 480,461 → 33,571):**
