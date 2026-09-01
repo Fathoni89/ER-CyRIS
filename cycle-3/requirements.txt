@@ -1,0 +1,16 @@
+# ER-CyRIS Cycle 3 — executed environment (known versions pinned where recorded)
+numpy==2.0.2
+pandas==2.2.2
+scikit-learn==1.6.1
+xgboost==3.3.0
+shap==0.52.0
+imbalanced-learn==0.14.2
+scipy
+matplotlib
+joblib
+cloudpickle
+psutil
+gradio
+plotly
+
+# The exact Google Colab runtime is environment-dependent.

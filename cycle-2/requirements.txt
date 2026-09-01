@@ -1,0 +1,11 @@
+# ER-CyRIS Cycle 2 — research environment
+numpy
+pandas
+scikit-learn
+xgboost
+shap
+imbalanced-learn
+matplotlib
+tqdm
+
+# Google Colab is used in the executed notebook; it is not required for local execution.
