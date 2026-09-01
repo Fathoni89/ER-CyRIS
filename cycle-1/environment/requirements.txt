@@ -1,0 +1,14 @@
+# Cycle 1 Research Environment
+
+Recommended/used software should be documented here based on the actual Cycle 1 notebook.
+
+Examples of libraries used in the research include:
+- Python
+- pandas
+- numpy
+- scikit-learn
+- xgboost
+- matplotlib
+- seaborn
+
+Before final submission, verify this list against the executed Cycle 1 notebook rather than treating it as an exact environment lockfile.
