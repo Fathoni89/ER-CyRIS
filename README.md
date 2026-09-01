@@ -1,9 +1,9 @@
 # ER-CyRIS — Explainable Real-Time Cybersecurity Risk Intelligence
 
-[![Publications](https://img.shields.io/badge/Publications-3-1F4E79)](docs/PUBLICATIONS.md)
+![Publications](https://img.shields.io/badge/Publications-3-1F4E79)
 [![Cycle 1](https://img.shields.io/badge/Cycle%201-MATRIK%20(Sinta%202)%20%C2%B7%20Published-2E7D32)](https://doi.org/10.30812/matrik.v25i3.6147)
-[![Cycle 1b](https://img.shields.io/badge/Cycle%201-JUTIF%20(Sinta%202)%20%C2%B7%20In%20Press-F57C00)](docs/PUBLICATIONS.md#cycle-1--second-output-jutif)
-[![Cycle 2](https://img.shields.io/badge/Cycle%202-IJEECS%20(Sinta%201%2FScopus)%20%C2%B7%20Accepted-F57C00)](docs/PUBLICATIONS.md#cycle-2-ijeecs)
+![Cycle 1b](https://img.shields.io/badge/Cycle%201-JUTIF%20(Sinta%202)%20%C2%B7%20In%20Press-F57C00)
+![Cycle 2](https://img.shields.io/badge/Cycle%202-IJEECS%20(Sinta%201%2FScopus)%20%C2%B7%20Accepted-F57C00)
 [![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey)](LICENSE)
 
 **ER-CyRIS** is a research framework developed in a doctoral dissertation on real-time cyber threat detection and explainable cybersecurity risk intelligence for academic information systems.
@@ -16,13 +16,13 @@ The central research argument of ER-CyRIS is not limited to anomaly detection or
 
 This repository therefore distinguishes clearly between **implemented computational artifacts**, **empirical evidence**, and **conceptual/proposed mechanisms**.
 
-> **Repository snapshot for dissertation appendix.** This README is referenced as a supporting appendix to the dissertation. Snapshot date: **1 September 2026**. Publication statuses below reflect that date and are evidenced in [`docs/PUBLICATIONS.md`](docs/PUBLICATIONS.md).
+> **Repository snapshot for dissertation appendix.** This README is referenced as a supporting appendix to the dissertation. Snapshot date: **1 September 2026**. Publication statuses below reflect that date and are evidenced in the [Publication Records](#-publication-records) section at the end of this page.
 
 ---
 
 ## 📚 Publication Status
 
-Three peer-reviewed outputs are associated with this research. Full citations, acceptance evidence, and BibTeX entries are maintained in [`docs/PUBLICATIONS.md`](docs/PUBLICATIONS.md).
+Three peer-reviewed outputs are associated with this research. Full citations, acceptance evidence, and BibTeX entries are given below and in the [Publication Records](#-publication-records) appendix at the end of this page.
 
 | # | Cycle | Venue | Accreditation | Status | Identifier |
 | :-: | :---- | :---- | :------------ | :----- | :--------- |
@@ -56,7 +56,7 @@ Accepted 19 August 2026 · Paper ID **#46518** · Tentatively scheduled for the 
 
 Presents the **dual-view (SV + CDV) preprocessing pipeline**, the M0–M4 ablation, and the Feature Stability Score (FSS) that form the representation layer of ER-CyRIS.
 
-📄 **Acceptance evidence** — Letters of Acceptance are archived in [`docs/publication-evidence/`](docs/publication-evidence/).
+📄 **Acceptance evidence** — the Letters of Acceptance are transcribed verbatim in [Publication Records](#-publication-records) below. Original documents are held by the author and available on request.
 
 ---
 
@@ -247,11 +247,8 @@ ER-CyRIS/
 │       └── DASHBOARD_URL.txt
 │
 ├── docs/
-│   ├── PUBLICATIONS.md
-│   ├── PUBLIC_DATA_BOUNDARY.md
-│   └── publication-evidence/
+│   └── PUBLIC_DATA_BOUNDARY.md
 │
-├── CITATION.cff
 └── README.md
 ```
 
@@ -271,7 +268,6 @@ ER-CyRIS/
 | Cycle 3        | Governance validation instrument | [`cycle-3/src/governance_validation_round1.gs`](cycle-3/src/governance_validation_round1.gs) |
 | Cycle 3        | Framework refinement             | [`cycle-3/framework-refinement/`](cycle-3/framework-refinement/)                             |
 | Cycle 3        | Live dashboard                   | [`dashboard/cycle-3/`](dashboard/cycle-3/)                                                   |
-| All            | Publication record and evidence  | [`docs/PUBLICATIONS.md`](docs/PUBLICATIONS.md)                                               |
 
 ---
 
@@ -437,7 +433,194 @@ The repository serves as a supporting research artifact and evidence trail for t
 
 ## 📝 How to Cite
 
-Please cite the published Cycle 1 article when referring to the weakness-mapping evidence, and the corresponding cycle article for other components. Machine-readable metadata is provided in [`CITATION.cff`](CITATION.cff); full BibTeX entries are in [`docs/PUBLICATIONS.md`](docs/PUBLICATIONS.md).
+Please cite the published Cycle 1 article when referring to the weakness-mapping evidence, and the corresponding cycle article for other components. Full BibTeX entries are provided in [Publication Records](#-publication-records) below.
+
+---
+
+---
+
+# 📑 Publication Records
+
+Full bibliographic records, contribution notes, BibTeX entries, and verbatim transcriptions of the acceptance letters.
+
+**Author team (all outputs):** Fathoni Mahardika (Universitas Sebelas April, Sumedang) · Ema Utami · Kusrini · Ferry Wahyu Wibowo (Universitas Amikom Yogyakarta)
+
+### Cycle 1 — First output (MATRIK)
+
+**Status:** ✅ Published
+
+**Title:** Operational Weakness Mapping of Machine Learning–Based Intrusion Detection Systems under Realistic Deployment Scenarios
+
+**Journal:** MATRIK: Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer
+**Publisher:** Universitas Bumigora, Mataram, Indonesia
+**Accreditation:** Sinta 2
+**Volume / Issue:** Vol. 25, No. 3 (July 2026)
+**Pages:** 491–508
+**DOI:** [10.30812/matrik.v25i3.6147](https://doi.org/10.30812/matrik.v25i3.6147)
+**Article URL:** <https://journal.universitasbumigora.ac.id/matrik/article/view/6147>
+
+**Contribution to ER-CyRIS.** Establishes the weakness-mapping evidence that motivates the framework. Supervised detectors (Random Forest, XGBoost) are compared against unsupervised baselines (Isolation Forest, LOF / kNN-distance, DBSCAN) across four public datasets — CICIDS2017, CICIDS2018, UNSW-NB15, and RanSMAP — under realistic deployment perturbations. The article reports near-perfect baseline performance that degrades sharply under minor Gaussian noise, and argues that evaluation must extend beyond accuracy benchmarking to robustness, interpretability, and alert management. This finding is the empirical basis for treating the detector as a producer of evidence rather than as a decision authority.
+
+**Mapped repository artifacts:** [`cycle-1/`](cycle-1/)
+
+#### BibTeX
+
+```bibtex
+@article{mahardika2026weakness,
+  author  = {Mahardika, Fathoni and Utami, Ema and Kusrini and Wibowo, Ferry Wahyu},
+  title   = {Operational Weakness Mapping of Machine Learning--Based Intrusion
+             Detection Systems under Realistic Deployment Scenarios},
+  journal = {MATRIK: Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer},
+  volume  = {25},
+  number  = {3},
+  pages   = {491--508},
+  year    = {2026},
+  doi     = {10.30812/matrik.v25i3.6147},
+  url     = {https://journal.universitasbumigora.ac.id/matrik/article/view/6147}
+}
+```
+
+---
+
+### Cycle 1 — Second output (JUTIF)
+
+**Status:** 🕓 Accepted — scheduled for publication
+
+**Title:** Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest
+
+**Journal:** JUTIF — Jurnal Teknik Informatika
+**Publisher:** Universitas Jenderal Soedirman (UNSOED), Purbalingga, Indonesia
+**Accreditation:** Sinta 2 — Decree of the Director General of Higher Education, Research, and Technology No. 177/E/KPT/2024
+**P-ISSN:** 2723-3863 · **E-ISSN:** 2723-3871
+**Scheduled issue:** Volume 7, Number 5 — October 2026
+**Letter of Acceptance:** No. 5711/LoA/JUTIF/II/2026, dated 24 February 2026
+**Signed by:** Dr. Ir. Lasmedi Afuan, S.T., M.Cs., IPM. (Chief Editor)
+**Journal URL:** <http://jutif.if.unsoed.ac.id>
+
+**Contribution to ER-CyRIS.** Develops the SHAP-guided failure casebook and the SOC triage rationale. Where the MATRIK article establishes *that* detectors fail under realistic conditions, this article establishes *how those failures can be read* — turning model errors into diagnosable, explainable cases that a security analyst can act on. It supplies the explainability layer of the framework.
+
+**Mapped repository artifacts:** [`cycle-1/`](cycle-1/)
+
+#### BibTeX
+
+```bibtex
+@article{mahardika2026diagnostics,
+  author  = {Mahardika, Fathoni and Utami, Ema and Kusrini and Wibowo, Ferry Wahyu},
+  title   = {Operational Diagnostics for Intrusion Detection: {SHAP}-Guided Failure
+             Casebook and {SOC} Triage Rationale with {XGBoost} and {RandomForest}},
+  journal = {JUTIF: Jurnal Teknik Informatika},
+  volume  = {7},
+  number  = {5},
+  year    = {2026},
+  note    = {In press. Accepted 24 February 2026, LoA No. 5711/LoA/JUTIF/II/2026},
+  issn    = {2723-3871}
+}
+```
+
+---
+
+### Cycle 2 (IJEECS)
+
+**Status:** 🕓 Accepted — scheduled for publication
+
+**Title:** Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS
+
+**Journal:** IJEECS — Indonesian Journal of Electrical Engineering and Computer Science
+**Publisher:** Institute of Advanced Engineering and Science (IAES)
+**Accreditation / Indexing:** Sinta 1 · Scopus-indexed
+**P-ISSN:** 2502-4752 · **E-ISSN:** 2502-4760
+**Paper ID:** #46518
+**Acceptance date:** 19 August 2026
+**Scheduled issue:** tentatively September 2026
+**Journal URL:** <https://ijeecs.iaescore.com/index.php/IJEECS>
+
+**Contribution to ER-CyRIS.** Presents the dual-view (Semantic View + Contextual Deviation View) log preprocessing pipeline, the M0–M4 ablation across four datasets, and the Feature Stability Score (FSS) as a diagnostic stability criterion. This is the representation layer of the framework: it establishes that explanations are only trustworthy when the underlying feature representation is itself stable under perturbation.
+
+**Mapped repository artifacts:** [`cycle-2/`](cycle-2/)
+
+#### BibTeX
+
+```bibtex
+@article{mahardika2026dualview,
+  author  = {Mahardika, Fathoni and Utami, Ema and Kusrini and Wibowo, Ferry Wahyu},
+  title   = {Dual View Explainability-aware Log Preprocessing for Robust Anomaly
+             Detection toward {ER-CyRIS}},
+  journal = {Indonesian Journal of Electrical Engineering and Computer Science},
+  year    = {2026},
+  note    = {Accepted for publication, 19 August 2026. Paper ID \#46518},
+  issn    = {2502-4760}
+}
+```
+
+---
+
+### Cycle 3 — In preparation
+
+Cycle 3 covers the integration of the ER-CyRIS framework, its institutional case study, the NIST SP 800-30 oriented risk mapping, near-real-time performance benchmarking, and the governance expert validation study.
+
+Manuscript preparation is in progress. This section will be updated when a submission or acceptance record exists.
+
+---
+
+### How the publications map to the framework layers
+
+| ER-CyRIS layer | Established by | Venue |
+| :------------- | :------------- | :---- |
+| Problem evidence — detector fragility under realistic conditions | Cycle 1, first output | MATRIK |
+| Explainability — failure casebook and triage rationale | Cycle 1, second output | JUTIF |
+| Representation — dual-view preprocessing and stability diagnostics | Cycle 2 | IJEECS |
+| Integration, risk interpretation, and governance validation | Cycle 3 | In preparation |
+
+---
+
+### Verification
+
+Readers who wish to verify these records may consult:
+
+* the DOI resolver for the published article: <https://doi.org/10.30812/matrik.v25i3.6147>;
+* the journal article page: <https://journal.universitasbumigora.ac.id/matrik/article/view/6147>;
+* the verbatim transcriptions of the Letters of Acceptance below; and
+* the SINTA accreditation records of each journal.
+
+Accepted-but-unpublished items are marked as such throughout this repository, and no claim of publication is made for them until the corresponding issue is released.
+
+---
+
+## 📄 Acceptance Letter Transcriptions
+
+### Transcription — IJEECS acceptance notice
+
+Provided as a text record alongside the source file.
+
+> **Paper ID# 46518**
+>
+> Dear Prof/Dr/Mr/Mrs: Fathoni Mahardika,
+>
+> It is my great pleasure to inform you that your paper entitled *"Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS"* is ACCEPTED and will be published on the Indonesian Journal of Electrical Engineering and Computer Science later, after all final documents have been completed and reached us.
+>
+> Your paper will be scheduled for publication in an upcoming issue (tentatively the September 2026 issue) of the journal.
+>
+> Best Regards,
+> Prof. Dr. Ir. Tole Sutikno, Editor, IJEECS
+
+Received 19 August 2026 from the IJEECS editorial office.
+
+---
+
+### Transcription — JUTIF Letter of Acceptance
+
+> **No. 5711/LoA/JUTIF/II/2026** — Letter of Acceptance, 24 February 2026
+>
+> Jurnal Teknik Informatika (JUTIF), Universitas Jenderal Soedirman.
+> P-ISSN 2723-3863, E-ISSN 2723-3871. Accredited SINTA 2 based on Decree No. 177/E/KPT/2024.
+>
+> Title: *Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest*
+>
+> Authors: Fathoni Mahardika (Universitas Sebelas April), Ema Utami (Universitas Amikom Yogyakarta), Kusrini (Universitas Amikom Yogyakarta), Ferry Wahyu Wibowo (Universitas Amikom Yogyakarta)
+>
+> Based on the review results, the article is ACCEPTED for publication in JUTIF, Volume 7 Number 5, October 2026.
+>
+> Chief Editor: Dr. Ir. Lasmedi Afuan, S.T., M.Cs., IPM.
 
 ---
 
@@ -446,4 +629,3 @@ Please cite the published Cycle 1 article when referring to the weakness-mapping
 The repository is intended primarily for academic research, transparency, and reproducibility.
 
 Users should cite the corresponding publications and dissertation when using or discussing the research artifacts.
-
