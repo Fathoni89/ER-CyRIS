@@ -1,0 +1,13 @@
+impact_method,risk_level,count,percent
+max,Low,0,0.0
+max,Moderate,0,0.0
+max,High,0,0.0
+max,Very High,352,100.0
+mean,Low,0,0.0
+mean,Moderate,0,0.0
+mean,High,224,63.63636363636363
+mean,Very High,128,36.36363636363637
+weighted,Low,0,0.0
+weighted,Moderate,0,0.0
+weighted,High,224,63.63636363636363
+weighted,Very High,128,36.36363636363637

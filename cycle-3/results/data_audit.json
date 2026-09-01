@@ -1,0 +1,9 @@
+{
+  "raw_rows": 480461,
+  "exact_feature_duplicate_rows": 446890,
+  "exact_feature_plus_label_duplicate_rows": 446669,
+  "conflicting_feature_groups": 221,
+  "rows_in_conflicting_groups": 10139,
+  "rows_after_conflict_policy_and_dedup": 33350,
+  "anomalies_after_dedup": 4116
+}

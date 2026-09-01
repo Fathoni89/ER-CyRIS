@@ -1,0 +1,12 @@
+,all_missing_in_train,missing_rate_train
+is_dosen,False,0.0
+semester_aktif,True,1.0
+hour,False,0.0
+minute,False,0.0
+day_of_week,False,0.0
+is_weekend,False,0.0
+is_off_hours,False,0.0
+is_error,False,0.0
+has_context,False,0.0
+sess_events_per_hour,False,0.0
+ip_events_per_hour,False,0.0

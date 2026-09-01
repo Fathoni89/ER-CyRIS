@@ -1,0 +1,14 @@
+{
+  "python": "3.13.15 (main, Aug  6 2026, 11:06:23) [GCC 11.4.0]",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "cpu_count": 2,
+  "memory_gb": 12.67,
+  "packages": {
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "shap": "0.52.0",
+    "imbalanced-learn": "0.14.2"
+  }
+}
