@@ -1,0 +1,3454 @@
+{
+  "M0_CICIDS2018": {
+    "config": "M0",
+    "dataset": "CICIDS2018",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.998673,
+          "Recall": 0.256779,
+          "F1": 0.40852,
+          "PR_AUC": 0.915564,
+          "FAR": 0.000195,
+          "Alert_Rate": 0.09341,
+          "TN": 133499,
+          "FP": 26,
+          "FN": 56626,
+          "TP": 19564,
+          "F1_drop": -0.59148,
+          "pct_drop": -59.15
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.008059,
+          "F1": 0.015989,
+          "PR_AUC": 0.89151,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00293,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 75576,
+          "TP": 614,
+          "F1_drop": -0.984011,
+          "pct_drop": -98.4
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.997716,
+          "Recall": 0.263735,
+          "F1": 0.417191,
+          "PR_AUC": 0.84176,
+          "FAR": 0.000345,
+          "Alert_Rate": 0.09604,
+          "TN": 133479,
+          "FP": 46,
+          "FN": 56096,
+          "TP": 20094,
+          "F1_drop": -0.582809,
+          "pct_drop": -58.28
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.0021,
+          "F1": 0.004191,
+          "PR_AUC": 0.813415,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00076,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 76030,
+          "TP": 160,
+          "F1_drop": -0.995809,
+          "pct_drop": -99.58
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.991769,
+          "Recall": 0.249862,
+          "F1": 0.399161,
+          "PR_AUC": 0.800489,
+          "FAR": 0.001183,
+          "Alert_Rate": 0.09153,
+          "TN": 133367,
+          "FP": 158,
+          "FN": 57153,
+          "TP": 19037,
+          "F1_drop": -0.600839,
+          "pct_drop": -60.08
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.001142,
+          "F1": 0.002281,
+          "PR_AUC": 0.761708,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00041,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 76103,
+          "TP": 87,
+          "F1_drop": -0.997719,
+          "pct_drop": -99.77
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 5,
+        "top10": [
+          "fwd_seg_size_min",
+          "dst_port",
+          "init_bwd_win_byts",
+          "bwd_pkts_per_s",
+          "init_fwd_win_byts",
+          "fwd_header_len",
+          "flow_duration",
+          "bwd_header_len",
+          "fwd_pkts_per_s",
+          "flow_iat_std"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 17,
+        "top10": [
+          "dst_port",
+          "fwd_seg_size_min",
+          "init_fwd_win_byts",
+          "bwd_pkts_per_s",
+          "flow_pkts_per_s",
+          "fwd_pkts_per_s",
+          "init_bwd_win_byts",
+          "fwd_header_len",
+          "bwd_header_len",
+          "fwd_pkt_len_mean"
+        ]
+      },
+      "cross_model_overlap": 0.6667
+    }
+  },
+  "M1_CICIDS2018": {
+    "config": "M1",
+    "dataset": "CICIDS2018",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.998673,
+          "Recall": 0.256779,
+          "F1": 0.40852,
+          "PR_AUC": 0.915564,
+          "FAR": 0.000195,
+          "Alert_Rate": 0.09341,
+          "TN": 133499,
+          "FP": 26,
+          "FN": 56626,
+          "TP": 19564,
+          "F1_drop": -0.59148,
+          "pct_drop": -59.15
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.008059,
+          "F1": 0.015989,
+          "PR_AUC": 0.89151,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00293,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 75576,
+          "TP": 614,
+          "F1_drop": -0.984011,
+          "pct_drop": -98.4
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.997716,
+          "Recall": 0.263735,
+          "F1": 0.417191,
+          "PR_AUC": 0.84176,
+          "FAR": 0.000345,
+          "Alert_Rate": 0.09604,
+          "TN": 133479,
+          "FP": 46,
+          "FN": 56096,
+          "TP": 20094,
+          "F1_drop": -0.582809,
+          "pct_drop": -58.28
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.0021,
+          "F1": 0.004191,
+          "PR_AUC": 0.813415,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00076,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 76030,
+          "TP": 160,
+          "F1_drop": -0.995809,
+          "pct_drop": -99.58
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.991769,
+          "Recall": 0.249862,
+          "F1": 0.399161,
+          "PR_AUC": 0.800489,
+          "FAR": 0.001183,
+          "Alert_Rate": 0.09153,
+          "TN": 133367,
+          "FP": 158,
+          "FN": 57153,
+          "TP": 19037,
+          "F1_drop": -0.600839,
+          "pct_drop": -60.08
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.001142,
+          "F1": 0.002281,
+          "PR_AUC": 0.761708,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00041,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 76103,
+          "TP": 87,
+          "F1_drop": -0.997719,
+          "pct_drop": -99.77
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 5,
+        "top10": [
+          "fwd_seg_size_min",
+          "dst_port",
+          "init_bwd_win_byts",
+          "bwd_pkts_per_s",
+          "init_fwd_win_byts",
+          "fwd_header_len",
+          "flow_duration",
+          "bwd_header_len",
+          "fwd_pkts_per_s",
+          "flow_iat_std"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 17,
+        "top10": [
+          "dst_port",
+          "fwd_seg_size_min",
+          "init_fwd_win_byts",
+          "bwd_pkts_per_s",
+          "flow_pkts_per_s",
+          "fwd_pkts_per_s",
+          "init_bwd_win_byts",
+          "fwd_header_len",
+          "bwd_header_len",
+          "fwd_pkt_len_mean"
+        ]
+      },
+      "cross_model_overlap": 0.6667
+    }
+  },
+  "M2_CICIDS2018": {
+    "config": "M2",
+    "dataset": "CICIDS2018",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.997537,
+          "Recall": 0.377372,
+          "F1": 0.547589,
+          "PR_AUC": 0.935159,
+          "FAR": 0.000532,
+          "Alert_Rate": 0.13744,
+          "TN": 133454,
+          "FP": 71,
+          "FN": 47438,
+          "TP": 28752,
+          "F1_drop": -0.452411,
+          "pct_drop": -45.24
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.038732,
+          "F1": 0.074576,
+          "PR_AUC": 0.91253,
+          "FAR": 0.0,
+          "Alert_Rate": 0.01407,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 73239,
+          "TP": 2951,
+          "F1_drop": -0.925424,
+          "pct_drop": -92.54
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.996838,
+          "Recall": 0.376532,
+          "F1": 0.546599,
+          "PR_AUC": 0.872511,
+          "FAR": 0.000682,
+          "Alert_Rate": 0.13723,
+          "TN": 133434,
+          "FP": 91,
+          "FN": 47502,
+          "TP": 28688,
+          "F1_drop": -0.453401,
+          "pct_drop": -45.34
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.008164,
+          "F1": 0.016195,
+          "PR_AUC": 0.817545,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00297,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 75568,
+          "TP": 622,
+          "F1_drop": -0.983805,
+          "pct_drop": -98.38
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.991387,
+          "Recall": 0.365599,
+          "F1": 0.534199,
+          "PR_AUC": 0.835158,
+          "FAR": 0.001812,
+          "Alert_Rate": 0.13398,
+          "TN": 133283,
+          "FP": 242,
+          "FN": 48335,
+          "TP": 27855,
+          "F1_drop": -0.465801,
+          "pct_drop": -46.58
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 0.992754,
+          "Recall": 0.003596,
+          "F1": 0.007167,
+          "PR_AUC": 0.762491,
+          "FAR": 1.5e-05,
+          "Alert_Rate": 0.00132,
+          "TN": 133523,
+          "FP": 2,
+          "FN": 75916,
+          "TP": 274,
+          "F1_drop": -0.992833,
+          "pct_drop": -99.28
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.6667,
+        "conciseness": 5,
+        "top10": [
+          "fwd_seg_size_min",
+          "dst_port",
+          "init_bwd_win_byts",
+          "bwd_pkts_per_s",
+          "init_fwd_win_byts",
+          "fwd_header_len",
+          "fwd_pkts_per_s",
+          "flow_duration",
+          "bwd_header_len",
+          "urg_flag_cnt"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.6667,
+        "conciseness": 14,
+        "top10": [
+          "fwd_seg_size_min",
+          "dst_port",
+          "aug_0",
+          "init_fwd_win_byts",
+          "bwd_pkts_per_s",
+          "fwd_pkts_per_s",
+          "flow_pkts_per_s",
+          "bwd_header_len",
+          "flow_iat_mean",
+          "aug_3"
+        ]
+      },
+      "cross_model_overlap": 0.4286
+    }
+  },
+  "M3_CICIDS2018": {
+    "config": "M3",
+    "dataset": "CICIDS2018",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.997776,
+          "Recall": 0.376795,
+          "F1": 0.547017,
+          "PR_AUC": 0.915333,
+          "FAR": 0.000479,
+          "Alert_Rate": 0.1372,
+          "TN": 133461,
+          "FP": 64,
+          "FN": 47482,
+          "TP": 28708,
+          "F1_drop": -0.452983,
+          "pct_drop": -45.3
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.105709,
+          "F1": 0.191206,
+          "PR_AUC": 0.909098,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0384,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 68136,
+          "TP": 8054,
+          "F1_drop": -0.808794,
+          "pct_drop": -80.88
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.997043,
+          "Recall": 0.376125,
+          "F1": 0.546201,
+          "PR_AUC": 0.873013,
+          "FAR": 0.000637,
+          "Alert_Rate": 0.13705,
+          "TN": 133440,
+          "FP": 85,
+          "FN": 47533,
+          "TP": 28657,
+          "F1_drop": -0.453799,
+          "pct_drop": -45.38
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 0.999249,
+          "Recall": 0.052395,
+          "F1": 0.09957,
+          "PR_AUC": 0.82308,
+          "FAR": 2.2e-05,
+          "Alert_Rate": 0.01905,
+          "TN": 133522,
+          "FP": 3,
+          "FN": 72198,
+          "TP": 3992,
+          "F1_drop": -0.90043,
+          "pct_drop": -90.04
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.991637,
+          "Recall": 0.36573,
+          "F1": 0.534375,
+          "PR_AUC": 0.847073,
+          "FAR": 0.00176,
+          "Alert_Rate": 0.13399,
+          "TN": 133290,
+          "FP": 235,
+          "FN": 48325,
+          "TP": 27865,
+          "F1_drop": -0.465625,
+          "pct_drop": -46.56
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 0.996934,
+          "Recall": 0.038404,
+          "F1": 0.073959,
+          "PR_AUC": 0.769791,
+          "FAR": 6.7e-05,
+          "Alert_Rate": 0.014,
+          "TN": 133516,
+          "FP": 9,
+          "FN": 73264,
+          "TP": 2926,
+          "F1_drop": -0.926041,
+          "pct_drop": -92.6
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 3,
+        "top10": [
+          "fwd_seg_size_min",
+          "dst_port",
+          "init_fwd_win_byts",
+          "bwd_pkts_per_s",
+          "init_bwd_win_byts",
+          "flow_duration",
+          "aug_5",
+          "fwd_pkts_per_s",
+          "aug_6",
+          "aug_2"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 14,
+        "top10": [
+          "dst_port",
+          "fwd_seg_size_min",
+          "aug_0",
+          "bwd_pkts_per_s",
+          "init_fwd_win_byts",
+          "flow_pkts_per_s",
+          "fwd_pkts_per_s",
+          "aug_5",
+          "fwd_header_len",
+          "aug_3"
+        ]
+      },
+      "cross_model_overlap": 0.4286
+    }
+  },
+  "M4_CICIDS2018": {
+    "config": "M4",
+    "dataset": "CICIDS2018",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "CICIDS2018",
+        "Precision": 1.0,
+        "Recall": 1.0,
+        "F1": 1.0,
+        "PR_AUC": 1.0,
+        "FAR": 0.0,
+        "Alert_Rate": 0.3633,
+        "TN": 133525,
+        "FP": 0,
+        "FN": 0,
+        "TP": 76190
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.998644,
+          "Recall": 0.193372,
+          "F1": 0.324005,
+          "PR_AUC": 0.822953,
+          "FAR": 0.00015,
+          "Alert_Rate": 0.07035,
+          "TN": 133505,
+          "FP": 20,
+          "FN": 61457,
+          "TP": 14733,
+          "F1_drop": -0.675995,
+          "pct_drop": -67.6
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.003714,
+          "F1": 0.007401,
+          "PR_AUC": 0.875296,
+          "FAR": 0.0,
+          "Alert_Rate": 0.00135,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 75907,
+          "TP": 283,
+          "F1_drop": -0.992599,
+          "pct_drop": -99.26
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.997677,
+          "Recall": 0.169104,
+          "F1": 0.28919,
+          "PR_AUC": 0.753275,
+          "FAR": 0.000225,
+          "Alert_Rate": 0.06158,
+          "TN": 133495,
+          "FP": 30,
+          "FN": 63306,
+          "TP": 12884,
+          "F1_drop": -0.71081,
+          "pct_drop": -71.08
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 1.0,
+          "Recall": 0.000827,
+          "F1": 0.001652,
+          "PR_AUC": 0.817126,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0003,
+          "TN": 133525,
+          "FP": 0,
+          "FN": 76127,
+          "TP": 63,
+          "F1_drop": -0.998348,
+          "pct_drop": -99.83
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "CICIDS2018",
+          "Precision": 0.991156,
+          "Recall": 0.154443,
+          "F1": 0.267244,
+          "PR_AUC": 0.718863,
+          "FAR": 0.000786,
+          "Alert_Rate": 0.05661,
+          "TN": 133420,
+          "FP": 105,
+          "FN": 64423,
+          "TP": 11767,
+          "F1_drop": -0.732756,
+          "pct_drop": -73.28
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "CICIDS2018",
+          "Precision": 0.97561,
+          "Recall": 0.000525,
+          "F1": 0.001049,
+          "PR_AUC": 0.766379,
+          "FAR": 7e-06,
+          "Alert_Rate": 0.0002,
+          "TN": 133524,
+          "FP": 1,
+          "FN": 76150,
+          "TP": 40,
+          "F1_drop": -0.998951,
+          "pct_drop": -99.9
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 6,
+        "top10": [
+          "fwd_seg_size_min",
+          "dst_port",
+          "aug_0",
+          "aug_5",
+          "aug_6",
+          "fwd_header_len",
+          "bwd_pkts_per_s",
+          "init_bwd_win_byts",
+          "aug_4",
+          "flow_duration"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.5385,
+        "conciseness": 19,
+        "top10": [
+          "dst_port",
+          "fwd_seg_size_min",
+          "aug_0",
+          "aug_6",
+          "init_fwd_win_byts",
+          "fwd_header_len",
+          "pkt_size_avg",
+          "fwd_pkts_per_s",
+          "pkt_len_max",
+          "flow_pkts_per_s"
+        ]
+      },
+      "cross_model_overlap": 0.3333
+    }
+  },
+  "M0_HDFS": {
+    "config": "M0",
+    "dataset": "HDFS",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "HDFS",
+        "Precision": 0.957223,
+        "Recall": 0.916865,
+        "F1": 0.936609,
+        "PR_AUC": 0.982397,
+        "FAR": 0.001236,
+        "Alert_Rate": 0.02805,
+        "TN": 111507,
+        "FP": 138,
+        "FN": 280,
+        "TP": 3088
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "HDFS",
+        "Precision": 0.941704,
+        "Recall": 0.935273,
+        "F1": 0.938478,
+        "PR_AUC": 0.982362,
+        "FAR": 0.001747,
+        "Alert_Rate": 0.02908,
+        "TN": 111450,
+        "FP": 195,
+        "FN": 218,
+        "TP": 3150
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.090419,
+          "Recall": 0.666865,
+          "F1": 0.159246,
+          "PR_AUC": 0.138388,
+          "FAR": 0.202374,
+          "Alert_Rate": 0.21598,
+          "TN": 89051,
+          "FP": 22594,
+          "FN": 1122,
+          "TP": 2246,
+          "F1_drop": -0.777363,
+          "pct_drop": -83.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.06476,
+          "Recall": 0.770487,
+          "F1": 0.119478,
+          "PR_AUC": 0.279996,
+          "FAR": 0.335671,
+          "Alert_Rate": 0.3484,
+          "TN": 74169,
+          "FP": 37476,
+          "FN": 773,
+          "TP": 2595,
+          "F1_drop": -0.819,
+          "pct_drop": -87.27
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.035843,
+          "Recall": 0.687352,
+          "F1": 0.068133,
+          "PR_AUC": 0.032933,
+          "FAR": 0.557768,
+          "Alert_Rate": 0.56156,
+          "TN": 49373,
+          "FP": 62272,
+          "FN": 1053,
+          "TP": 2315,
+          "F1_drop": -0.868476,
+          "pct_drop": -92.73
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.035691,
+          "Recall": 0.851247,
+          "F1": 0.068509,
+          "PR_AUC": 0.03918,
+          "FAR": 0.693824,
+          "Alert_Rate": 0.69843,
+          "TN": 34183,
+          "FP": 77462,
+          "FN": 501,
+          "TP": 2867,
+          "F1_drop": -0.869969,
+          "pct_drop": -92.7
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.031825,
+          "Recall": 0.70962,
+          "F1": 0.060917,
+          "PR_AUC": 0.029353,
+          "FAR": 0.651252,
+          "Alert_Rate": 0.65296,
+          "TN": 38936,
+          "FP": 72709,
+          "FN": 978,
+          "TP": 2390,
+          "F1_drop": -0.875692,
+          "pct_drop": -93.5
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.032057,
+          "Recall": 0.872328,
+          "F1": 0.061842,
+          "PR_AUC": 0.033945,
+          "FAR": 0.794572,
+          "Alert_Rate": 0.79685,
+          "TN": 22935,
+          "FP": 88710,
+          "FN": 430,
+          "TP": 2938,
+          "F1_drop": -0.876636,
+          "pct_drop": -93.41
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 3,
+        "top10": [
+          "n_events",
+          "n_comp",
+          "mean_sev",
+          "n_warn",
+          "n_error",
+          "max_sev",
+          "error_ratio",
+          "warn_ratio"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 4,
+        "top10": [
+          "n_events",
+          "n_comp",
+          "warn_ratio",
+          "max_sev",
+          "n_warn",
+          "mean_sev",
+          "n_error",
+          "error_ratio"
+        ]
+      },
+      "cross_model_overlap": 1.0
+    }
+  },
+  "M1_HDFS": {
+    "config": "M1",
+    "dataset": "HDFS",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "HDFS",
+        "Precision": 0.957223,
+        "Recall": 0.916865,
+        "F1": 0.936609,
+        "PR_AUC": 0.982397,
+        "FAR": 0.001236,
+        "Alert_Rate": 0.02805,
+        "TN": 111507,
+        "FP": 138,
+        "FN": 280,
+        "TP": 3088
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "HDFS",
+        "Precision": 0.941704,
+        "Recall": 0.935273,
+        "F1": 0.938478,
+        "PR_AUC": 0.982362,
+        "FAR": 0.001747,
+        "Alert_Rate": 0.02908,
+        "TN": 111450,
+        "FP": 195,
+        "FN": 218,
+        "TP": 3150
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.090419,
+          "Recall": 0.666865,
+          "F1": 0.159246,
+          "PR_AUC": 0.138388,
+          "FAR": 0.202374,
+          "Alert_Rate": 0.21598,
+          "TN": 89051,
+          "FP": 22594,
+          "FN": 1122,
+          "TP": 2246,
+          "F1_drop": -0.777363,
+          "pct_drop": -83.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.06476,
+          "Recall": 0.770487,
+          "F1": 0.119478,
+          "PR_AUC": 0.279996,
+          "FAR": 0.335671,
+          "Alert_Rate": 0.3484,
+          "TN": 74169,
+          "FP": 37476,
+          "FN": 773,
+          "TP": 2595,
+          "F1_drop": -0.819,
+          "pct_drop": -87.27
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.035843,
+          "Recall": 0.687352,
+          "F1": 0.068133,
+          "PR_AUC": 0.032933,
+          "FAR": 0.557768,
+          "Alert_Rate": 0.56156,
+          "TN": 49373,
+          "FP": 62272,
+          "FN": 1053,
+          "TP": 2315,
+          "F1_drop": -0.868476,
+          "pct_drop": -92.73
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.035691,
+          "Recall": 0.851247,
+          "F1": 0.068509,
+          "PR_AUC": 0.03918,
+          "FAR": 0.693824,
+          "Alert_Rate": 0.69843,
+          "TN": 34183,
+          "FP": 77462,
+          "FN": 501,
+          "TP": 2867,
+          "F1_drop": -0.869969,
+          "pct_drop": -92.7
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.031825,
+          "Recall": 0.70962,
+          "F1": 0.060917,
+          "PR_AUC": 0.029353,
+          "FAR": 0.651252,
+          "Alert_Rate": 0.65296,
+          "TN": 38936,
+          "FP": 72709,
+          "FN": 978,
+          "TP": 2390,
+          "F1_drop": -0.875692,
+          "pct_drop": -93.5
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.032057,
+          "Recall": 0.872328,
+          "F1": 0.061842,
+          "PR_AUC": 0.033945,
+          "FAR": 0.794572,
+          "Alert_Rate": 0.79685,
+          "TN": 22935,
+          "FP": 88710,
+          "FN": 430,
+          "TP": 2938,
+          "F1_drop": -0.876636,
+          "pct_drop": -93.41
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 3,
+        "top10": [
+          "n_events",
+          "n_comp",
+          "mean_sev",
+          "n_warn",
+          "n_error",
+          "max_sev",
+          "error_ratio",
+          "warn_ratio"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 4,
+        "top10": [
+          "n_events",
+          "n_comp",
+          "warn_ratio",
+          "max_sev",
+          "n_warn",
+          "mean_sev",
+          "n_error",
+          "error_ratio"
+        ]
+      },
+      "cross_model_overlap": 1.0
+    }
+  },
+  "M2_HDFS": {
+    "config": "M2",
+    "dataset": "HDFS",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "HDFS",
+        "Precision": 0.942059,
+        "Recall": 0.93171,
+        "F1": 0.936856,
+        "PR_AUC": 0.982179,
+        "FAR": 0.001729,
+        "Alert_Rate": 0.02896,
+        "TN": 111452,
+        "FP": 193,
+        "FN": 230,
+        "TP": 3138
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "HDFS",
+        "Precision": 0.941704,
+        "Recall": 0.935273,
+        "F1": 0.938478,
+        "PR_AUC": 0.982624,
+        "FAR": 0.001747,
+        "Alert_Rate": 0.02908,
+        "TN": 111450,
+        "FP": 195,
+        "FN": 218,
+        "TP": 3150
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.078897,
+          "Recall": 0.744062,
+          "F1": 0.142666,
+          "PR_AUC": 0.198729,
+          "FAR": 0.262054,
+          "Alert_Rate": 0.27617,
+          "TN": 82388,
+          "FP": 29257,
+          "FN": 862,
+          "TP": 2506,
+          "F1_drop": -0.79419,
+          "pct_drop": -84.77
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.211566,
+          "Recall": 0.798397,
+          "F1": 0.334494,
+          "PR_AUC": 0.730098,
+          "FAR": 0.089758,
+          "Alert_Rate": 0.11051,
+          "TN": 101624,
+          "FP": 10021,
+          "FN": 679,
+          "TP": 2689,
+          "F1_drop": -0.603984,
+          "pct_drop": -64.36
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.050914,
+          "Recall": 0.729513,
+          "F1": 0.095185,
+          "PR_AUC": 0.063608,
+          "FAR": 0.410238,
+          "Alert_Rate": 0.41959,
+          "TN": 65844,
+          "FP": 45801,
+          "FN": 911,
+          "TP": 2457,
+          "F1_drop": -0.841671,
+          "pct_drop": -89.84
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.051233,
+          "Recall": 0.834917,
+          "F1": 0.096543,
+          "PR_AUC": 0.33172,
+          "FAR": 0.466425,
+          "Alert_Rate": 0.47722,
+          "TN": 59571,
+          "FP": 52074,
+          "FN": 556,
+          "TP": 2812,
+          "F1_drop": -0.841935,
+          "pct_drop": -89.71
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.042819,
+          "Recall": 0.726544,
+          "F1": 0.080873,
+          "PR_AUC": 0.048346,
+          "FAR": 0.489946,
+          "Alert_Rate": 0.49687,
+          "TN": 56945,
+          "FP": 54700,
+          "FN": 921,
+          "TP": 2447,
+          "F1_drop": -0.855983,
+          "pct_drop": -91.37
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.039728,
+          "Recall": 0.861639,
+          "F1": 0.075954,
+          "PR_AUC": 0.15318,
+          "FAR": 0.628286,
+          "Alert_Rate": 0.63512,
+          "TN": 41500,
+          "FP": 70145,
+          "FN": 466,
+          "TP": 2902,
+          "F1_drop": -0.862524,
+          "pct_drop": -91.91
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 4,
+        "top10": [
+          "n_events",
+          "n_comp",
+          "aug_0",
+          "n_warn",
+          "mean_sev",
+          "aug_3",
+          "aug_2",
+          "n_error",
+          "warn_ratio",
+          "error_ratio"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 6,
+        "top10": [
+          "aug_0",
+          "n_events",
+          "n_comp",
+          "aug_3",
+          "warn_ratio",
+          "mean_sev",
+          "max_sev",
+          "n_warn",
+          "aug_2",
+          "aug_4"
+        ]
+      },
+      "cross_model_overlap": 0.6667
+    }
+  },
+  "M3_HDFS": {
+    "config": "M3",
+    "dataset": "HDFS",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "HDFS",
+        "Precision": 0.942567,
+        "Recall": 0.93557,
+        "F1": 0.939055,
+        "PR_AUC": 0.982764,
+        "FAR": 0.00172,
+        "Alert_Rate": 0.02907,
+        "TN": 111453,
+        "FP": 192,
+        "FN": 217,
+        "TP": 3151
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "HDFS",
+        "Precision": 0.941704,
+        "Recall": 0.935273,
+        "F1": 0.938478,
+        "PR_AUC": 0.982482,
+        "FAR": 0.001747,
+        "Alert_Rate": 0.02908,
+        "TN": 111450,
+        "FP": 195,
+        "FN": 218,
+        "TP": 3150
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.31106,
+          "Recall": 0.72981,
+          "F1": 0.436202,
+          "PR_AUC": 0.65717,
+          "FAR": 0.048762,
+          "Alert_Rate": 0.06871,
+          "TN": 106201,
+          "FP": 5444,
+          "FN": 910,
+          "TP": 2458,
+          "F1_drop": -0.502853,
+          "pct_drop": -53.55
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.1301,
+          "Recall": 0.827494,
+          "F1": 0.224849,
+          "PR_AUC": 0.741728,
+          "FAR": 0.166913,
+          "Alert_Rate": 0.18626,
+          "TN": 93010,
+          "FP": 18635,
+          "FN": 581,
+          "TP": 2787,
+          "F1_drop": -0.713629,
+          "pct_drop": -76.04
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.17634,
+          "Recall": 0.752375,
+          "F1": 0.285714,
+          "PR_AUC": 0.367454,
+          "FAR": 0.106015,
+          "Alert_Rate": 0.12494,
+          "TN": 99809,
+          "FP": 11836,
+          "FN": 834,
+          "TP": 2534,
+          "F1_drop": -0.653341,
+          "pct_drop": -69.57
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.056545,
+          "Recall": 0.872031,
+          "F1": 0.106203,
+          "PR_AUC": 0.577609,
+          "FAR": 0.438927,
+          "Alert_Rate": 0.45161,
+          "TN": 62641,
+          "FP": 49004,
+          "FN": 431,
+          "TP": 2937,
+          "F1_drop": -0.832275,
+          "pct_drop": -88.68
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.135657,
+          "Recall": 0.740796,
+          "F1": 0.22932,
+          "PR_AUC": 0.250947,
+          "FAR": 0.142389,
+          "Alert_Rate": 0.15991,
+          "TN": 95748,
+          "FP": 15897,
+          "FN": 873,
+          "TP": 2495,
+          "F1_drop": -0.709735,
+          "pct_drop": -75.58
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.049176,
+          "Recall": 0.901128,
+          "F1": 0.093263,
+          "PR_AUC": 0.399076,
+          "FAR": 0.525612,
+          "Alert_Rate": 0.53661,
+          "TN": 52963,
+          "FP": 58682,
+          "FN": 333,
+          "TP": 3035,
+          "F1_drop": -0.845215,
+          "pct_drop": -90.06
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 3,
+        "top10": [
+          "aug_6",
+          "aug_0",
+          "n_events",
+          "mean_sev",
+          "n_comp",
+          "aug_3",
+          "n_warn",
+          "aug_5",
+          "aug_2",
+          "error_ratio"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.6667,
+        "conciseness": 8,
+        "top10": [
+          "aug_6",
+          "n_events",
+          "mean_sev",
+          "aug_0",
+          "aug_3",
+          "aug_7",
+          "aug_2",
+          "warn_ratio",
+          "max_sev",
+          "n_comp"
+        ]
+      },
+      "cross_model_overlap": 0.5385
+    }
+  },
+  "M4_HDFS": {
+    "config": "M4",
+    "dataset": "HDFS",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "HDFS",
+        "Precision": 0.742503,
+        "Recall": 0.977732,
+        "F1": 0.844034,
+        "PR_AUC": 0.954483,
+        "FAR": 0.010229,
+        "Alert_Rate": 0.03856,
+        "TN": 110503,
+        "FP": 1142,
+        "FN": 75,
+        "TP": 3293
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "HDFS",
+        "Precision": 0.743839,
+        "Recall": 0.976841,
+        "F1": 0.844564,
+        "PR_AUC": 0.958975,
+        "FAR": 0.010148,
+        "Alert_Rate": 0.03846,
+        "TN": 110512,
+        "FP": 1133,
+        "FN": 78,
+        "TP": 3290
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.052163,
+          "Recall": 0.9038,
+          "F1": 0.098633,
+          "PR_AUC": 0.278073,
+          "FAR": 0.495427,
+          "Alert_Rate": 0.50739,
+          "TN": 56333,
+          "FP": 55312,
+          "FN": 324,
+          "TP": 3044,
+          "F1_drop": -0.745401,
+          "pct_drop": -88.31
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.295348,
+          "Recall": 0.95576,
+          "F1": 0.451251,
+          "PR_AUC": 0.805787,
+          "FAR": 0.068789,
+          "Alert_Rate": 0.09476,
+          "TN": 103965,
+          "FP": 7680,
+          "FN": 149,
+          "TP": 3219,
+          "F1_drop": -0.393313,
+          "pct_drop": -46.57
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.049634,
+          "Recall": 0.866686,
+          "F1": 0.09389,
+          "PR_AUC": 0.163189,
+          "FAR": 0.500623,
+          "Alert_Rate": 0.51134,
+          "TN": 55753,
+          "FP": 55892,
+          "FN": 449,
+          "TP": 2919,
+          "F1_drop": -0.750144,
+          "pct_drop": -88.88
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.174885,
+          "Recall": 0.940321,
+          "F1": 0.29492,
+          "PR_AUC": 0.616478,
+          "FAR": 0.133835,
+          "Alert_Rate": 0.15745,
+          "TN": 96703,
+          "FP": 14942,
+          "FN": 201,
+          "TP": 3167,
+          "F1_drop": -0.549644,
+          "pct_drop": -65.08
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "HDFS",
+          "Precision": 0.047707,
+          "Recall": 0.827197,
+          "F1": 0.090211,
+          "PR_AUC": 0.101666,
+          "FAR": 0.498115,
+          "Alert_Rate": 0.50775,
+          "TN": 56033,
+          "FP": 55612,
+          "FN": 582,
+          "TP": 2786,
+          "F1_drop": -0.753823,
+          "pct_drop": -89.31
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "HDFS",
+          "Precision": 0.142255,
+          "Recall": 0.921615,
+          "F1": 0.246467,
+          "PR_AUC": 0.484788,
+          "FAR": 0.167638,
+          "Alert_Rate": 0.18972,
+          "TN": 92929,
+          "FP": 18716,
+          "FN": 264,
+          "TP": 3104,
+          "F1_drop": -0.598097,
+          "pct_drop": -70.82
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "aug_6",
+          "n_events",
+          "mean_sev",
+          "aug_0",
+          "n_warn",
+          "n_comp",
+          "aug_7",
+          "aug_5",
+          "aug_3",
+          "aug_2"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 5,
+        "top10": [
+          "aug_6",
+          "n_events",
+          "aug_0",
+          "aug_7",
+          "mean_sev",
+          "warn_ratio",
+          "aug_3",
+          "n_comp",
+          "aug_2",
+          "n_warn"
+        ]
+      },
+      "cross_model_overlap": 0.8182
+    }
+  },
+  "M0_BGL": {
+    "config": "M0",
+    "dataset": "BGL",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "BGL",
+        "Precision": 0.887165,
+        "Recall": 0.856948,
+        "F1": 0.871795,
+        "PR_AUC": 0.914125,
+        "FAR": 0.008634,
+        "Alert_Rate": 0.0709,
+        "TN": 9186,
+        "FP": 80,
+        "FN": 105,
+        "TP": 629
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "BGL",
+        "Precision": 0.851003,
+        "Recall": 0.809264,
+        "F1": 0.829609,
+        "PR_AUC": 0.856267,
+        "FAR": 0.011224,
+        "Alert_Rate": 0.0698,
+        "TN": 9162,
+        "FP": 104,
+        "FN": 140,
+        "TP": 594
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.378378,
+          "Recall": 0.133515,
+          "F1": 0.197382,
+          "PR_AUC": 0.234367,
+          "FAR": 0.017375,
+          "Alert_Rate": 0.0259,
+          "TN": 9105,
+          "FP": 161,
+          "FN": 636,
+          "TP": 98,
+          "F1_drop": -0.674413,
+          "pct_drop": -77.36
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.357143,
+          "Recall": 0.245232,
+          "F1": 0.290792,
+          "PR_AUC": 0.272512,
+          "FAR": 0.034967,
+          "Alert_Rate": 0.0504,
+          "TN": 8942,
+          "FP": 324,
+          "FN": 554,
+          "TP": 180,
+          "F1_drop": -0.538817,
+          "pct_drop": -64.95
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.182979,
+          "Recall": 0.058583,
+          "F1": 0.088751,
+          "PR_AUC": 0.147111,
+          "FAR": 0.020721,
+          "Alert_Rate": 0.0235,
+          "TN": 9074,
+          "FP": 192,
+          "FN": 691,
+          "TP": 43,
+          "F1_drop": -0.783044,
+          "pct_drop": -89.82
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.187342,
+          "Recall": 0.100817,
+          "F1": 0.131089,
+          "PR_AUC": 0.134322,
+          "FAR": 0.034643,
+          "Alert_Rate": 0.0395,
+          "TN": 8945,
+          "FP": 321,
+          "FN": 660,
+          "TP": 74,
+          "F1_drop": -0.69852,
+          "pct_drop": -84.2
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.203704,
+          "Recall": 0.044959,
+          "F1": 0.073661,
+          "PR_AUC": 0.151475,
+          "FAR": 0.013922,
+          "Alert_Rate": 0.0162,
+          "TN": 9137,
+          "FP": 129,
+          "FN": 701,
+          "TP": 33,
+          "F1_drop": -0.798134,
+          "pct_drop": -91.55
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.193548,
+          "Recall": 0.073569,
+          "F1": 0.106614,
+          "PR_AUC": 0.151582,
+          "FAR": 0.024282,
+          "Alert_Rate": 0.0279,
+          "TN": 9041,
+          "FP": 225,
+          "FN": 680,
+          "TP": 54,
+          "F1_drop": -0.722995,
+          "pct_drop": -87.15
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "err_kw",
+          "msg_len",
+          "node_h",
+          "comp_len",
+          "hour",
+          "sev",
+          "is_warn",
+          "is_err",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "msg_len",
+          "err_kw",
+          "node_h",
+          "comp_len",
+          "hour",
+          "sev",
+          "is_warn",
+          "is_err",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "cross_model_overlap": 1.0
+    }
+  },
+  "M1_BGL": {
+    "config": "M1",
+    "dataset": "BGL",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "BGL",
+        "Precision": 0.887165,
+        "Recall": 0.856948,
+        "F1": 0.871795,
+        "PR_AUC": 0.914125,
+        "FAR": 0.008634,
+        "Alert_Rate": 0.0709,
+        "TN": 9186,
+        "FP": 80,
+        "FN": 105,
+        "TP": 629
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "BGL",
+        "Precision": 0.851003,
+        "Recall": 0.809264,
+        "F1": 0.829609,
+        "PR_AUC": 0.856267,
+        "FAR": 0.011224,
+        "Alert_Rate": 0.0698,
+        "TN": 9162,
+        "FP": 104,
+        "FN": 140,
+        "TP": 594
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.378378,
+          "Recall": 0.133515,
+          "F1": 0.197382,
+          "PR_AUC": 0.234367,
+          "FAR": 0.017375,
+          "Alert_Rate": 0.0259,
+          "TN": 9105,
+          "FP": 161,
+          "FN": 636,
+          "TP": 98,
+          "F1_drop": -0.674413,
+          "pct_drop": -77.36
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.357143,
+          "Recall": 0.245232,
+          "F1": 0.290792,
+          "PR_AUC": 0.272512,
+          "FAR": 0.034967,
+          "Alert_Rate": 0.0504,
+          "TN": 8942,
+          "FP": 324,
+          "FN": 554,
+          "TP": 180,
+          "F1_drop": -0.538817,
+          "pct_drop": -64.95
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.182979,
+          "Recall": 0.058583,
+          "F1": 0.088751,
+          "PR_AUC": 0.147111,
+          "FAR": 0.020721,
+          "Alert_Rate": 0.0235,
+          "TN": 9074,
+          "FP": 192,
+          "FN": 691,
+          "TP": 43,
+          "F1_drop": -0.783044,
+          "pct_drop": -89.82
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.187342,
+          "Recall": 0.100817,
+          "F1": 0.131089,
+          "PR_AUC": 0.134322,
+          "FAR": 0.034643,
+          "Alert_Rate": 0.0395,
+          "TN": 8945,
+          "FP": 321,
+          "FN": 660,
+          "TP": 74,
+          "F1_drop": -0.69852,
+          "pct_drop": -84.2
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.203704,
+          "Recall": 0.044959,
+          "F1": 0.073661,
+          "PR_AUC": 0.151475,
+          "FAR": 0.013922,
+          "Alert_Rate": 0.0162,
+          "TN": 9137,
+          "FP": 129,
+          "FN": 701,
+          "TP": 33,
+          "F1_drop": -0.798134,
+          "pct_drop": -91.55
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.193548,
+          "Recall": 0.073569,
+          "F1": 0.106614,
+          "PR_AUC": 0.151578,
+          "FAR": 0.024282,
+          "Alert_Rate": 0.0279,
+          "TN": 9041,
+          "FP": 225,
+          "FN": 680,
+          "TP": 54,
+          "F1_drop": -0.722995,
+          "pct_drop": -87.15
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "err_kw",
+          "msg_len",
+          "node_h",
+          "comp_len",
+          "hour",
+          "sev",
+          "is_warn",
+          "is_err",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "msg_len",
+          "err_kw",
+          "node_h",
+          "comp_len",
+          "hour",
+          "sev",
+          "is_warn",
+          "is_err",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "cross_model_overlap": 1.0
+    }
+  },
+  "M2_BGL": {
+    "config": "M2",
+    "dataset": "BGL",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "BGL",
+        "Precision": 0.887165,
+        "Recall": 0.856948,
+        "F1": 0.871795,
+        "PR_AUC": 0.914125,
+        "FAR": 0.008634,
+        "Alert_Rate": 0.0709,
+        "TN": 9186,
+        "FP": 80,
+        "FN": 105,
+        "TP": 629
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "BGL",
+        "Precision": 0.850214,
+        "Recall": 0.811989,
+        "F1": 0.830662,
+        "PR_AUC": 0.854046,
+        "FAR": 0.011332,
+        "Alert_Rate": 0.0701,
+        "TN": 9161,
+        "FP": 105,
+        "FN": 138,
+        "TP": 596
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.0,
+          "Recall": 0.0,
+          "F1": 0.0,
+          "PR_AUC": 0.083841,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0,
+          "TN": 9266,
+          "FP": 0,
+          "FN": 734,
+          "TP": 0,
+          "F1_drop": -0.871795,
+          "pct_drop": -100.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.361396,
+          "Recall": 0.239782,
+          "F1": 0.288288,
+          "PR_AUC": 0.276449,
+          "FAR": 0.033564,
+          "Alert_Rate": 0.0487,
+          "TN": 8955,
+          "FP": 311,
+          "FN": 558,
+          "TP": 176,
+          "F1_drop": -0.542374,
+          "pct_drop": -65.29
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.0,
+          "Recall": 0.0,
+          "F1": 0.0,
+          "PR_AUC": 0.074819,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0,
+          "TN": 9266,
+          "FP": 0,
+          "FN": 734,
+          "TP": 0,
+          "F1_drop": -0.871795,
+          "pct_drop": -100.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.223844,
+          "Recall": 0.125341,
+          "F1": 0.160699,
+          "PR_AUC": 0.143878,
+          "FAR": 0.034427,
+          "Alert_Rate": 0.0411,
+          "TN": 8947,
+          "FP": 319,
+          "FN": 642,
+          "TP": 92,
+          "F1_drop": -0.669963,
+          "pct_drop": -80.65
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.0,
+          "Recall": 0.0,
+          "F1": 0.0,
+          "PR_AUC": 0.07052,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0,
+          "TN": 9266,
+          "FP": 0,
+          "FN": 734,
+          "TP": 0,
+          "F1_drop": -0.871795,
+          "pct_drop": -100.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.223776,
+          "Recall": 0.087193,
+          "F1": 0.12549,
+          "PR_AUC": 0.139098,
+          "FAR": 0.023959,
+          "Alert_Rate": 0.0286,
+          "TN": 9044,
+          "FP": 222,
+          "FN": 670,
+          "TP": 64,
+          "F1_drop": -0.705172,
+          "pct_drop": -84.89
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "err_kw",
+          "msg_len",
+          "node_h",
+          "comp_len",
+          "hour",
+          "sev",
+          "is_warn",
+          "is_err",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "msg_len",
+          "err_kw",
+          "node_h",
+          "comp_len",
+          "hour",
+          "sev",
+          "is_warn",
+          "is_err",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "cross_model_overlap": 1.0
+    }
+  },
+  "M3_BGL": {
+    "config": "M3",
+    "dataset": "BGL",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "BGL",
+        "Precision": 0.880171,
+        "Recall": 0.840599,
+        "F1": 0.85993,
+        "PR_AUC": 0.908916,
+        "FAR": 0.009065,
+        "Alert_Rate": 0.0701,
+        "TN": 9182,
+        "FP": 84,
+        "FN": 117,
+        "TP": 617
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "BGL",
+        "Precision": 0.882897,
+        "Recall": 0.780654,
+        "F1": 0.828633,
+        "PR_AUC": 0.859954,
+        "FAR": 0.008202,
+        "Alert_Rate": 0.0649,
+        "TN": 9190,
+        "FP": 76,
+        "FN": 161,
+        "TP": 573
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.0,
+          "Recall": 0.0,
+          "F1": 0.0,
+          "PR_AUC": 0.157211,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0,
+          "TN": 9266,
+          "FP": 0,
+          "FN": 734,
+          "TP": 0,
+          "F1_drop": -0.85993,
+          "pct_drop": -100.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.726667,
+          "Recall": 0.297003,
+          "F1": 0.421663,
+          "PR_AUC": 0.575747,
+          "FAR": 0.00885,
+          "Alert_Rate": 0.03,
+          "TN": 9184,
+          "FP": 82,
+          "FN": 516,
+          "TP": 218,
+          "F1_drop": -0.40697,
+          "pct_drop": -49.11
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.0,
+          "Recall": 0.0,
+          "F1": 0.0,
+          "PR_AUC": 0.09212,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0,
+          "TN": 9266,
+          "FP": 0,
+          "FN": 734,
+          "TP": 0,
+          "F1_drop": -0.85993,
+          "pct_drop": -100.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.254545,
+          "Recall": 0.076294,
+          "F1": 0.1174,
+          "PR_AUC": 0.232535,
+          "FAR": 0.017699,
+          "Alert_Rate": 0.022,
+          "TN": 9102,
+          "FP": 164,
+          "FN": 678,
+          "TP": 56,
+          "F1_drop": -0.711233,
+          "pct_drop": -85.83
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.0,
+          "Recall": 0.0,
+          "F1": 0.0,
+          "PR_AUC": 0.084736,
+          "FAR": 0.0,
+          "Alert_Rate": 0.0,
+          "TN": 9266,
+          "FP": 0,
+          "FN": 734,
+          "TP": 0,
+          "F1_drop": -0.85993,
+          "pct_drop": -100.0
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.157895,
+          "Recall": 0.024523,
+          "F1": 0.042453,
+          "PR_AUC": 0.204308,
+          "FAR": 0.01036,
+          "Alert_Rate": 0.0114,
+          "TN": 9170,
+          "FP": 96,
+          "FN": 716,
+          "TP": 18,
+          "F1_drop": -0.78618,
+          "pct_drop": -94.88
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 2,
+        "top10": [
+          "err_kw",
+          "msg_len",
+          "aug_6",
+          "aug_5",
+          "node_h",
+          "comp_len",
+          "hour",
+          "sev",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 3,
+        "top10": [
+          "err_kw",
+          "msg_len",
+          "aug_6",
+          "aug_5",
+          "node_h",
+          "aug_7",
+          "comp_len",
+          "hour",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "cross_model_overlap": 0.8182
+    }
+  },
+  "M4_BGL": {
+    "config": "M4",
+    "dataset": "BGL",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "BGL",
+        "Precision": 0.621795,
+        "Recall": 0.925068,
+        "F1": 0.743702,
+        "PR_AUC": 0.832929,
+        "FAR": 0.044572,
+        "Alert_Rate": 0.1092,
+        "TN": 8853,
+        "FP": 413,
+        "FN": 55,
+        "TP": 679
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "BGL",
+        "Precision": 0.734266,
+        "Recall": 0.858311,
+        "F1": 0.791457,
+        "PR_AUC": 0.802414,
+        "FAR": 0.024606,
+        "Alert_Rate": 0.0858,
+        "TN": 9038,
+        "FP": 228,
+        "FN": 104,
+        "TP": 630
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.351926,
+          "Recall": 0.361035,
+          "F1": 0.356422,
+          "PR_AUC": 0.273247,
+          "FAR": 0.052666,
+          "Alert_Rate": 0.0753,
+          "TN": 8778,
+          "FP": 488,
+          "FN": 469,
+          "TP": 265,
+          "F1_drop": -0.38728,
+          "pct_drop": -52.07
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.376119,
+          "Recall": 0.686649,
+          "F1": 0.486017,
+          "PR_AUC": 0.439661,
+          "FAR": 0.090222,
+          "Alert_Rate": 0.134,
+          "TN": 8430,
+          "FP": 836,
+          "FN": 230,
+          "TP": 504,
+          "F1_drop": -0.30544,
+          "pct_drop": -38.59
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.277641,
+          "Recall": 0.153951,
+          "F1": 0.198072,
+          "PR_AUC": 0.20365,
+          "FAR": 0.031729,
+          "Alert_Rate": 0.0407,
+          "TN": 8972,
+          "FP": 294,
+          "FN": 621,
+          "TP": 113,
+          "F1_drop": -0.54563,
+          "pct_drop": -73.37
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.320917,
+          "Recall": 0.305177,
+          "F1": 0.312849,
+          "PR_AUC": 0.257701,
+          "FAR": 0.051155,
+          "Alert_Rate": 0.0698,
+          "TN": 8792,
+          "FP": 474,
+          "FN": 510,
+          "TP": 224,
+          "F1_drop": -0.478608,
+          "pct_drop": -60.47
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "BGL",
+          "Precision": 0.245955,
+          "Recall": 0.103542,
+          "F1": 0.145733,
+          "PR_AUC": 0.173947,
+          "FAR": 0.025146,
+          "Alert_Rate": 0.0309,
+          "TN": 9033,
+          "FP": 233,
+          "FN": 658,
+          "TP": 76,
+          "F1_drop": -0.597969,
+          "pct_drop": -80.4
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "BGL",
+          "Precision": 0.297071,
+          "Recall": 0.19346,
+          "F1": 0.234323,
+          "PR_AUC": 0.237278,
+          "FAR": 0.036262,
+          "Alert_Rate": 0.0478,
+          "TN": 8930,
+          "FP": 336,
+          "FN": 592,
+          "TP": 142,
+          "F1_drop": -0.557134,
+          "pct_drop": -70.39
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 3,
+        "top10": [
+          "err_kw",
+          "aug_6",
+          "msg_len",
+          "aug_5",
+          "node_h",
+          "comp_len",
+          "aug_7",
+          "hour",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 1.0,
+        "conciseness": 4,
+        "top10": [
+          "err_kw",
+          "msg_len",
+          "aug_6",
+          "aug_5",
+          "node_h",
+          "comp_len",
+          "aug_7",
+          "hour",
+          "has_num",
+          "peak_hr"
+        ]
+      },
+      "cross_model_overlap": 1.0
+    }
+  },
+  "M0_UNSW-NB15": {
+    "config": "M0",
+    "dataset": "UNSW-NB15",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.978466,
+        "Recall": 0.981769,
+        "F1": 0.980115,
+        "PR_AUC": 0.998055,
+        "FAR": 0.000708,
+        "Alert_Rate": 0.03184,
+        "TN": 135461,
+        "FP": 96,
+        "FN": 81,
+        "TP": 4362
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.977328,
+        "Recall": 0.989647,
+        "F1": 0.983449,
+        "PR_AUC": 0.998871,
+        "FAR": 0.000752,
+        "Alert_Rate": 0.03214,
+        "TN": 135455,
+        "FP": 102,
+        "FN": 46,
+        "TP": 4397
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.863403,
+          "Recall": 0.758271,
+          "F1": 0.80743,
+          "PR_AUC": 0.850585,
+          "FAR": 0.003932,
+          "Alert_Rate": 0.02787,
+          "TN": 135024,
+          "FP": 533,
+          "FN": 1074,
+          "TP": 3369,
+          "F1_drop": -0.172685,
+          "pct_drop": -17.62
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.850642,
+          "Recall": 0.849876,
+          "F1": 0.850259,
+          "PR_AUC": 0.855937,
+          "FAR": 0.004891,
+          "Alert_Rate": 0.03171,
+          "TN": 134894,
+          "FP": 663,
+          "FN": 667,
+          "TP": 3776,
+          "F1_drop": -0.13319,
+          "pct_drop": -13.54
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.824823,
+          "Recall": 0.734414,
+          "F1": 0.776997,
+          "PR_AUC": 0.787315,
+          "FAR": 0.005112,
+          "Alert_Rate": 0.02826,
+          "TN": 134864,
+          "FP": 693,
+          "FN": 1180,
+          "TP": 3263,
+          "F1_drop": -0.203118,
+          "pct_drop": -20.72
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.818843,
+          "Recall": 0.633806,
+          "F1": 0.714539,
+          "PR_AUC": 0.806991,
+          "FAR": 0.004596,
+          "Alert_Rate": 0.02456,
+          "TN": 134934,
+          "FP": 623,
+          "FN": 1627,
+          "TP": 2816,
+          "F1_drop": -0.26891,
+          "pct_drop": -27.34
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.518136,
+          "Recall": 0.688049,
+          "F1": 0.591124,
+          "PR_AUC": 0.581253,
+          "FAR": 0.020973,
+          "Alert_Rate": 0.04214,
+          "TN": 132714,
+          "FP": 2843,
+          "FN": 1386,
+          "TP": 3057,
+          "F1_drop": -0.388991,
+          "pct_drop": -39.69
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.781073,
+          "Recall": 0.497862,
+          "F1": 0.60811,
+          "PR_AUC": 0.737477,
+          "FAR": 0.004574,
+          "Alert_Rate": 0.02023,
+          "TN": 134937,
+          "FP": 620,
+          "FN": 2231,
+          "TP": 2212,
+          "F1_drop": -0.375339,
+          "pct_drop": -38.17
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.5385,
+        "conciseness": 7,
+        "top10": [
+          "0.14",
+          "31",
+          "1421927414",
+          "621800.9375",
+          "82",
+          "53",
+          "164",
+          "7",
+          "1421927414.1",
+          "132"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.5385,
+        "conciseness": 13,
+        "top10": [
+          "31",
+          "0.14",
+          "29",
+          "82",
+          "1421927414",
+          "0.12",
+          "500473.9375",
+          "621800.9375",
+          "53",
+          "164"
+        ]
+      },
+      "cross_model_overlap": 0.5385
+    }
+  },
+  "M1_UNSW-NB15": {
+    "config": "M1",
+    "dataset": "UNSW-NB15",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.978466,
+        "Recall": 0.981769,
+        "F1": 0.980115,
+        "PR_AUC": 0.998055,
+        "FAR": 0.000708,
+        "Alert_Rate": 0.03184,
+        "TN": 135461,
+        "FP": 96,
+        "FN": 81,
+        "TP": 4362
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.977328,
+        "Recall": 0.989647,
+        "F1": 0.983449,
+        "PR_AUC": 0.998871,
+        "FAR": 0.000752,
+        "Alert_Rate": 0.03214,
+        "TN": 135455,
+        "FP": 102,
+        "FN": 46,
+        "TP": 4397
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.863403,
+          "Recall": 0.758271,
+          "F1": 0.80743,
+          "PR_AUC": 0.850585,
+          "FAR": 0.003932,
+          "Alert_Rate": 0.02787,
+          "TN": 135024,
+          "FP": 533,
+          "FN": 1074,
+          "TP": 3369,
+          "F1_drop": -0.172685,
+          "pct_drop": -17.62
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.850642,
+          "Recall": 0.849876,
+          "F1": 0.850259,
+          "PR_AUC": 0.855937,
+          "FAR": 0.004891,
+          "Alert_Rate": 0.03171,
+          "TN": 134894,
+          "FP": 663,
+          "FN": 667,
+          "TP": 3776,
+          "F1_drop": -0.13319,
+          "pct_drop": -13.54
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.824823,
+          "Recall": 0.734414,
+          "F1": 0.776997,
+          "PR_AUC": 0.787315,
+          "FAR": 0.005112,
+          "Alert_Rate": 0.02826,
+          "TN": 134864,
+          "FP": 693,
+          "FN": 1180,
+          "TP": 3263,
+          "F1_drop": -0.203118,
+          "pct_drop": -20.72
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.818843,
+          "Recall": 0.633806,
+          "F1": 0.714539,
+          "PR_AUC": 0.806991,
+          "FAR": 0.004596,
+          "Alert_Rate": 0.02456,
+          "TN": 134934,
+          "FP": 623,
+          "FN": 1627,
+          "TP": 2816,
+          "F1_drop": -0.26891,
+          "pct_drop": -27.34
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.518136,
+          "Recall": 0.688049,
+          "F1": 0.591124,
+          "PR_AUC": 0.581253,
+          "FAR": 0.020973,
+          "Alert_Rate": 0.04214,
+          "TN": 132714,
+          "FP": 2843,
+          "FN": 1386,
+          "TP": 3057,
+          "F1_drop": -0.388991,
+          "pct_drop": -39.69
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.781073,
+          "Recall": 0.497862,
+          "F1": 0.60811,
+          "PR_AUC": 0.737477,
+          "FAR": 0.004574,
+          "Alert_Rate": 0.02023,
+          "TN": 134937,
+          "FP": 620,
+          "FN": 2231,
+          "TP": 2212,
+          "F1_drop": -0.375339,
+          "pct_drop": -38.17
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.5385,
+        "conciseness": 7,
+        "top10": [
+          "0.14",
+          "31",
+          "1421927414",
+          "621800.9375",
+          "82",
+          "53",
+          "164",
+          "7",
+          "1421927414.1",
+          "132"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.5385,
+        "conciseness": 13,
+        "top10": [
+          "31",
+          "0.14",
+          "29",
+          "82",
+          "1421927414",
+          "0.12",
+          "500473.9375",
+          "621800.9375",
+          "53",
+          "164"
+        ]
+      },
+      "cross_model_overlap": 0.5385
+    }
+  },
+  "M2_UNSW-NB15": {
+    "config": "M2",
+    "dataset": "UNSW-NB15",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.9787,
+        "Recall": 0.982444,
+        "F1": 0.980568,
+        "PR_AUC": 0.997519,
+        "FAR": 0.000701,
+        "Alert_Rate": 0.03186,
+        "TN": 135462,
+        "FP": 95,
+        "FN": 78,
+        "TP": 4365
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.978193,
+        "Recall": 0.989422,
+        "F1": 0.983775,
+        "PR_AUC": 0.99896,
+        "FAR": 0.000723,
+        "Alert_Rate": 0.0321,
+        "TN": 135459,
+        "FP": 98,
+        "FN": 47,
+        "TP": 4396
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.866614,
+          "Recall": 0.738465,
+          "F1": 0.797424,
+          "PR_AUC": 0.84323,
+          "FAR": 0.003725,
+          "Alert_Rate": 0.02704,
+          "TN": 135052,
+          "FP": 505,
+          "FN": 1162,
+          "TP": 3281,
+          "F1_drop": -0.183144,
+          "pct_drop": -18.68
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.857669,
+          "Recall": 0.838172,
+          "F1": 0.847809,
+          "PR_AUC": 0.853607,
+          "FAR": 0.004559,
+          "Alert_Rate": 0.03101,
+          "TN": 134939,
+          "FP": 618,
+          "FN": 719,
+          "TP": 3724,
+          "F1_drop": -0.135966,
+          "pct_drop": -13.82
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.844746,
+          "Recall": 0.685798,
+          "F1": 0.757019,
+          "PR_AUC": 0.776601,
+          "FAR": 0.004131,
+          "Alert_Rate": 0.02576,
+          "TN": 134997,
+          "FP": 560,
+          "FN": 1396,
+          "TP": 3047,
+          "F1_drop": -0.223549,
+          "pct_drop": -22.8
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.822792,
+          "Recall": 0.620752,
+          "F1": 0.707633,
+          "PR_AUC": 0.810933,
+          "FAR": 0.004382,
+          "Alert_Rate": 0.02394,
+          "TN": 134963,
+          "FP": 594,
+          "FN": 1685,
+          "TP": 2758,
+          "F1_drop": -0.276142,
+          "pct_drop": -28.07
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.608294,
+          "Recall": 0.637182,
+          "F1": 0.622403,
+          "PR_AUC": 0.593486,
+          "FAR": 0.013448,
+          "Alert_Rate": 0.03324,
+          "TN": 133734,
+          "FP": 1823,
+          "FN": 1612,
+          "TP": 2831,
+          "F1_drop": -0.358165,
+          "pct_drop": -36.53
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.755556,
+          "Recall": 0.474454,
+          "F1": 0.582884,
+          "PR_AUC": 0.716993,
+          "FAR": 0.005031,
+          "Alert_Rate": 0.01993,
+          "TN": 134875,
+          "FP": 682,
+          "FN": 2335,
+          "TP": 2108,
+          "F1_drop": -0.400891,
+          "pct_drop": -40.75
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 9,
+        "top10": [
+          "0.14",
+          "31",
+          "1421927414",
+          "621800.9375",
+          "1421927414.1",
+          "aug_3",
+          "82",
+          "132",
+          "0.9",
+          "164"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.4286,
+        "conciseness": 13,
+        "top10": [
+          "0.14",
+          "31",
+          "29",
+          "82",
+          "500473.9375",
+          "1421927414",
+          "1421927414.1",
+          "0.10",
+          "0.001055",
+          "66"
+        ]
+      },
+      "cross_model_overlap": 0.3333
+    }
+  },
+  "M3_UNSW-NB15": {
+    "config": "M3",
+    "dataset": "UNSW-NB15",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.975577,
+        "Recall": 0.979968,
+        "F1": 0.977768,
+        "PR_AUC": 0.997847,
+        "FAR": 0.000804,
+        "Alert_Rate": 0.03188,
+        "TN": 135448,
+        "FP": 109,
+        "FN": 89,
+        "TP": 4354
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.978198,
+        "Recall": 0.989647,
+        "F1": 0.983889,
+        "PR_AUC": 0.998888,
+        "FAR": 0.000723,
+        "Alert_Rate": 0.03211,
+        "TN": 135459,
+        "FP": 98,
+        "FN": 46,
+        "TP": 4397
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.874837,
+          "Recall": 0.756696,
+          "F1": 0.811489,
+          "PR_AUC": 0.86516,
+          "FAR": 0.003548,
+          "Alert_Rate": 0.02745,
+          "TN": 135076,
+          "FP": 481,
+          "FN": 1081,
+          "TP": 3362,
+          "F1_drop": -0.166279,
+          "pct_drop": -17.01
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.866165,
+          "Recall": 0.932253,
+          "F1": 0.897995,
+          "PR_AUC": 0.897866,
+          "FAR": 0.004721,
+          "Alert_Rate": 0.03416,
+          "TN": 134917,
+          "FP": 640,
+          "FN": 301,
+          "TP": 4142,
+          "F1_drop": -0.085894,
+          "pct_drop": -8.73
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.833647,
+          "Recall": 0.697052,
+          "F1": 0.759255,
+          "PR_AUC": 0.788335,
+          "FAR": 0.004559,
+          "Alert_Rate": 0.02654,
+          "TN": 134939,
+          "FP": 618,
+          "FN": 1346,
+          "TP": 3097,
+          "F1_drop": -0.218513,
+          "pct_drop": -22.35
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.847031,
+          "Recall": 0.818816,
+          "F1": 0.832685,
+          "PR_AUC": 0.852332,
+          "FAR": 0.004847,
+          "Alert_Rate": 0.03068,
+          "TN": 134900,
+          "FP": 657,
+          "FN": 805,
+          "TP": 3638,
+          "F1_drop": -0.151204,
+          "pct_drop": -15.37
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.541809,
+          "Recall": 0.644609,
+          "F1": 0.588755,
+          "PR_AUC": 0.581553,
+          "FAR": 0.017867,
+          "Alert_Rate": 0.03776,
+          "TN": 133135,
+          "FP": 2422,
+          "FN": 1579,
+          "TP": 2864,
+          "F1_drop": -0.389013,
+          "pct_drop": -39.79
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.759305,
+          "Recall": 0.697952,
+          "F1": 0.727337,
+          "PR_AUC": 0.7478,
+          "FAR": 0.007252,
+          "Alert_Rate": 0.02917,
+          "TN": 134574,
+          "FP": 983,
+          "FN": 1342,
+          "TP": 3101,
+          "F1_drop": -0.256552,
+          "pct_drop": -26.08
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.6667,
+        "conciseness": 10,
+        "top10": [
+          "31",
+          "0.14",
+          "1421927414",
+          "aug_6",
+          "621800.9375",
+          "82",
+          "1421927414.1",
+          "aug_3",
+          "132",
+          "aug_5"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.4286,
+        "conciseness": 13,
+        "top10": [
+          "0.14",
+          "31",
+          "29",
+          "82",
+          "1421927414",
+          "0.10",
+          "500473.9375",
+          "aug_6",
+          "1421927414.1",
+          "132"
+        ]
+      },
+      "cross_model_overlap": 0.5385
+    }
+  },
+  "M4_UNSW-NB15": {
+    "config": "M4",
+    "dataset": "UNSW-NB15",
+    "S0": {
+      "XGBoost": {
+        "model": "XGBoost",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.962566,
+        "Recall": 0.989647,
+        "F1": 0.975918,
+        "PR_AUC": 0.998059,
+        "FAR": 0.001261,
+        "Alert_Rate": 0.03263,
+        "TN": 135386,
+        "FP": 171,
+        "FN": 46,
+        "TP": 4397
+      },
+      "RandomForest": {
+        "model": "RandomForest",
+        "dataset": "UNSW-NB15",
+        "Precision": 0.954742,
+        "Recall": 0.992348,
+        "F1": 0.973182,
+        "PR_AUC": 0.997861,
+        "FAR": 0.001542,
+        "Alert_Rate": 0.03299,
+        "TN": 135348,
+        "FP": 209,
+        "FN": 34,
+        "TP": 4409
+      }
+    },
+    "S2": {
+      "0.01": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.667959,
+          "Recall": 0.891965,
+          "F1": 0.763878,
+          "PR_AUC": 0.781452,
+          "FAR": 0.014533,
+          "Alert_Rate": 0.04238,
+          "TN": 133587,
+          "FP": 1970,
+          "FN": 480,
+          "TP": 3963,
+          "F1_drop": -0.21204,
+          "pct_drop": -21.73
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.835317,
+          "Recall": 0.774027,
+          "F1": 0.803505,
+          "PR_AUC": 0.839152,
+          "FAR": 0.005002,
+          "Alert_Rate": 0.02941,
+          "TN": 134879,
+          "FP": 678,
+          "FN": 1004,
+          "TP": 3439,
+          "F1_drop": -0.169677,
+          "pct_drop": -17.44
+        }
+      },
+      "0.05": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.658095,
+          "Recall": 0.760297,
+          "F1": 0.705514,
+          "PR_AUC": 0.715717,
+          "FAR": 0.012947,
+          "Alert_Rate": 0.03666,
+          "TN": 133802,
+          "FP": 1755,
+          "FN": 1065,
+          "TP": 3378,
+          "F1_drop": -0.270404,
+          "pct_drop": -27.71
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.809901,
+          "Recall": 0.460275,
+          "F1": 0.586969,
+          "PR_AUC": 0.800824,
+          "FAR": 0.003541,
+          "Alert_Rate": 0.01804,
+          "TN": 135077,
+          "FP": 480,
+          "FN": 2398,
+          "TP": 2045,
+          "F1_drop": -0.386213,
+          "pct_drop": -39.69
+        }
+      },
+      "0.1": {
+        "XGBoost": {
+          "model": "XGBoost",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.500096,
+          "Recall": 0.586316,
+          "F1": 0.539785,
+          "PR_AUC": 0.517176,
+          "FAR": 0.01921,
+          "Alert_Rate": 0.03721,
+          "TN": 132953,
+          "FP": 2604,
+          "FN": 1838,
+          "TP": 2605,
+          "F1_drop": -0.436133,
+          "pct_drop": -44.69
+        },
+        "RandomForest": {
+          "model": "RandomForest",
+          "dataset": "UNSW-NB15",
+          "Precision": 0.73734,
+          "Recall": 0.298222,
+          "F1": 0.424679,
+          "PR_AUC": 0.648327,
+          "FAR": 0.003482,
+          "Alert_Rate": 0.01284,
+          "TN": 135085,
+          "FP": 472,
+          "FN": 3118,
+          "TP": 1325,
+          "F1_drop": -0.548503,
+          "pct_drop": -56.36
+        }
+      }
+    },
+    "FSS": {
+      "XGBoost": {
+        "FSS_S0_S2": 0.6667,
+        "conciseness": 12,
+        "top10": [
+          "0.14",
+          "31",
+          "1421927414",
+          "1421927414.1",
+          "53",
+          "aug_6",
+          "164",
+          "3.1",
+          "3",
+          "7"
+        ]
+      },
+      "RandomForest": {
+        "FSS_S0_S2": 0.8182,
+        "conciseness": 8,
+        "top10": [
+          "0.14",
+          "31",
+          "1421927414",
+          "1421927414.1",
+          "aug_6",
+          "29",
+          "621800.9375",
+          "0.12",
+          "aug_7",
+          "0.10"
+        ]
+      },
+      "cross_model_overlap": 0.3333
+    }
+  }
+}
