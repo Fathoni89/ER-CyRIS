@@ -350,16 +350,16 @@ The repository also documents the research outputs associated with the three res
 ### Cycle 1
 
 * Published research output in **MATRIK — Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer**, Sinta 2.
-**Operational Weakness Mapping of Machine Learning–Based Intrusion Detection Systems under Realistic Deployment Scenarios**
+**"Operational Weakness Mapping of Machine Learning–Based Intrusion Detection Systems under Realistic Deployment Scenarios"**
 **https://journal.universitasbumigora.ac.id/matrik/article/view/6147**
 * A second Cycle 1 manuscript has been accepted and is scheduled for publication On October 2026.
 **JUTIF — Jurnal Teknik Informatika, UNSOED**, Sinta 2.
-**Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest**
+**"Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest"**
 
 ### Cycle 2
 
 * Research output accepted for publication in **IJEECS — Indonesian Journal of Electrical Engineering and Computer Science**, Sinta 1.
-**Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS**
+**"Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS"**
 
 
 Publication information and links are maintained in the corresponding repository documentation.
