@@ -1,239 +1,389 @@
-# ER-CyRIS
+# ER-CyRIS — Explainable Real-Time Cybersecurity Risk Intelligence
 
-## Explainable Real-Time Cybersecurity Risk Intelligence System
+**ER-CyRIS** is a research framework developed in a doctoral dissertation on real-time cyber threat detection and explainable cybersecurity risk intelligence for academic information systems.
 
-**ER-CyRIS** is a research framework for explainable and accountable cybersecurity risk intelligence in information-system environments. The framework connects technical cybersecurity evidence with explainability, risk judgment, human oversight, accountable reliance, and organizational learning.
+The repository provides the computational artifacts, experimental notebooks, source code, dashboard prototype, and supporting documentation developed across three research cycles.
 
-This repository contains the research artifacts, experimental evidence, implementation materials, and publication records supporting the development of ER-CyRIS across three research cycles.
+The central research argument of ER-CyRIS is not limited to anomaly detection or explainable machine learning. ER-CyRIS is designed to connect:
 
----
+**Technical Evidence → Explainability → Risk Interpretation → Risk Judgment → Human Authority → Accountable Reliance → Organizational Learning**
 
-## Research Overview
-
-ER-CyRIS is developed through three sequential research cycles:
-
-### Cycle 1 — Technical Evidence and Operational Weakness Mapping
-
-The first cycle investigates the robustness and operational characteristics of machine-learning-based intrusion detection under realistic deployment stressors.
-
-The evaluation uses public cybersecurity datasets and compares supervised and unsupervised approaches under multiple experimental scenarios, including baseline performance, class imbalance, telemetry degradation, drift, parameter sensitivity, and micro-batch inference.
-
-**Main outcome:** identification of operational weaknesses that cannot be adequately captured by benchmark accuracy alone.
-
-### Cycle 2 — Robust and Explainable Log Representation
-
-The second cycle focuses on the construction of a log representation and preprocessing pipeline suitable for cybersecurity risk intelligence in information-system environments.
-
-The cycle investigates the stability, informativeness, and explainability of the resulting representation under noise, missing values, and other realistic data-quality conditions.
-
-**Main outcome:** development and evaluation of the preprocessing/log-representation approach supporting the ER-CyRIS technical pipeline.
-
-### Cycle 3 — Governance Validation and Framework Refinement
-
-The third cycle extends the technical evidence into a governance-oriented mechanism.
-
-The proposed ER-CyRIS architecture connects:
-
-**Technical Evidence → Explainability → Risk Judgment → Human Oversight → Accountable Reliance → Organizational Learning**
-
-Governance expert validation is used to identify agreement, disagreement, operational weaknesses, and opportunities for framework refinement.
-
-The feedback path **M7 → M3** is currently positioned as a **proposed design-level feedback mechanism**. It does not represent automatic pruning, automatic retraining, or closed-loop adaptation unless explicitly demonstrated by an executed experiment.
+This repository therefore distinguishes clearly between **implemented computational artifacts**, **empirical evidence**, and **conceptual/proposed mechanisms**.
 
 ---
 
-# Research Contribution
+## 🎯 Research Objective
 
-The central contribution of ER-CyRIS is not merely the combination of anomaly detection, explainable AI, cybersecurity risk assessment, and governance components.
+The research aims to develop and evaluate an explainability-aware cybersecurity risk intelligence framework that can support the translation of technical detection evidence into accountable cybersecurity risk decisions.
 
-Instead, ER-CyRIS proposes a mechanism for connecting technical cybersecurity evidence to accountable security decision-making.
+The research focuses on maintaining a clear relationship between:
 
-The research therefore distinguishes between:
-
-1. **Technical artifact** — the computational mechanisms for producing cybersecurity evidence;
-2. **Evidence interpretation** — the use of explainability and contextual information to interpret the evidence;
-3. **Risk judgment** — translation of technical evidence into cybersecurity risk considerations;
-4. **Human authority and oversight** — mechanisms through which authorized personnel evaluate, accept, escalate, or override system-supported judgments;
-5. **Accountable reliance** — conditions under which system outputs can reasonably support organizational decisions; and
-6. **Organizational learning** — the use of decision outcomes and expert feedback to inform future refinement.
-
----
-
-# Publication Record
-
-The research outputs supporting ER-CyRIS are being disseminated through peer-reviewed publications across the research cycles.
-
-| Cycle   | Publication                                                                                                             | Venue                                                                 | Status                                             | Year |
-| ------- | ----------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | ---- |
-| Cycle 1 | Operational Weakness Mapping of Machine Learning–Based Intrusion Detection Systems under Realistic Deployment Scenarios | MATRIK: Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer    | **Published — Sinta 2** | 2026 |
-| Cycle 1 | Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest | JUTIF: Jurnal Teknik Informatika | **Accepted / forthcoming October Sinta 2** | 2026 |
-| Cycle 2 | Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS | International Journal of Electrical and Computer Engineering (IJEECS) | **Accepted — Sinta 1; forthcoming September 2026** | 2026 |
+* cybersecurity detection;
+* evidence generation;
+* explainable interpretation;
+* cybersecurity risk assessment;
+* operational triage;
+* human oversight;
+* governance and accountability; and
+* organizational learning.
 
 ---
 
-# Published Research
+# 🔬 Research Cycles
 
-## Cycle 1 — MATRIK
+## Cycle 1 — Technical Detection and Robustness
 
-**Operational Weakness Mapping of Machine Learning–Based Intrusion Detection Systems under Realistic Deployment Scenarios**
+Cycle 1 establishes the technical foundation of ER-CyRIS through experiments using public cybersecurity datasets.
 
-**Authors:**
-Fathoni Mahardika, Ema Utami, Kusrini, Ferry Wahyu Wibowo
+The cycle focuses on:
 
-**Journal:** MATRIK: Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer
+* anomaly and intrusion detection;
+* comparative evaluation of machine-learning approaches;
+* preprocessing and feature preparation;
+* model performance evaluation;
+* robustness analysis under noise and missing values; and
+* identification of the technical evidence required by subsequent ER-CyRIS stages.
 
-**Indexing:** Sinta 2
+The resulting evidence provides the technical foundation for the development of the subsequent research cycles.
 
-**Status:** Published
+### Main artifacts
 
-**DOI:** 10.30812/matrik.v25i3.6147
-
-[View Published Article](https://journal.universitasbumigora.ac.id/matrik/article/view/6147)
-
-This publication constitutes one of the primary research outputs of **Cycle 1** and provides empirical evidence regarding operational weaknesses of machine-learning-based intrusion detection systems under realistic deployment conditions.
-
----
-
-# Forthcoming Research
-
-## Cycle 1 — JUTIF
-
-**Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest**
-
-A second Cycle 1 publication has been accepted for publication in **JUTIF**, a Sinta 2 journal.
-
-**Status:** Accepted / forthcoming
-
-**Expected publication:** October 2026
-
-The publication extends the Cycle 1 research output and contributes additional evidence to the technical foundation of ER-CyRIS.
-
-> Publication metadata and DOI will be updated in this repository once the article is officially published.
+* Experimental notebooks
+* Model evaluation results
+* Robustness experiments
+* Supporting figures and results
+* Research documentation
 
 ---
 
-## Cycle 2 — IJEECS
+## Cycle 2 — Log Representation and Stability
 
-**Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS**
+Cycle 2 focuses on the development and evaluation of a log-representation and preprocessing pipeline for academic information-system security logs.
 
-The Cycle 2 research has been **accepted for publication in the International Journal of Electrical and Computer Engineering (IJEECS)**.
+The cycle investigates how operational logs can be transformed into representations that remain:
 
-**Journal:** International Journal of Electrical and Computer Engineering (IJEECS)
+* informative;
+* stable;
+* robust to missing or noisy observations; and
+* suitable for subsequent explainability and risk-oriented analysis.
 
-**Indexing:** Sinta 1
+The cycle includes the **M0–M4 ablation experiment** and the use of the **Feature Stability Score (FSS)** as a diagnostic stability criterion.
 
-**Status:** Accepted
+The main methodological components include:
 
-**Expected publication:** September 2026
+* log preprocessing;
+* missing-value handling;
+* feature transformation;
+* token/feature preservation;
+* ablation analysis;
+* stability diagnostics; and
+* evaluation of representation quality.
 
-The article represents the publication output of **Cycle 2** and supports the development of the technical evidence and log-representation component of ER-CyRIS.
+### Main artifacts
 
-> The final bibliographic metadata, DOI, volume, issue, and publication URL will be updated after official publication.
+* Final Cycle 2 experimental notebook
+* M0–M4 ablation source modules
+* Evaluation utilities
+* Experimental results
+* Figures and supporting documentation
+* Python environment requirements
 
 ---
 
-# Research Artifacts
+## Cycle 3 — ER-CyRIS Integration and Governance Validation
 
-This repository is organized to support reproducibility and traceability of the research process.
+Cycle 3 integrates the technical evidence developed in the previous cycles into the ER-CyRIS research prototype.
+
+The cycle focuses on the relationship between:
+
+**Evidence → Explainability → Risk Judgment → Human Oversight → Accountable Reliance**
+
+The prototype includes computational components for:
+
+* cybersecurity detection;
+* explainability;
+* SHAP-based interpretation;
+* operational triage;
+* cybersecurity risk mapping;
+* NIST-oriented risk interpretation;
+* near-real-time performance benchmarking; and
+* governance-oriented validation.
+
+The Cycle 3 dashboard provides an interactive representation of the implemented prototype and its analytical outputs.
+
+### Main artifacts
+
+* Corrected Cycle 3 research notebook
+* Dashboard source code
+* Governance expert-validation instrument
+* Framework-refinement documentation
+* Experimental results
+* Supporting figures
+* Python environment requirements
+
+---
+
+# 🚀 Cycle 3 Live Dashboard
+
+The Cycle 3 dashboard provides an interactive view of the implemented ER-CyRIS prototype.
+
+It is intended to demonstrate how technical outputs can be presented as evidence for explainability, operational triage, and cybersecurity risk interpretation.
+
+**Live Dashboard:**
+[Open the ER-CyRIS Cycle 3 Dashboard](dashboard/cycle-3/DASHBOARD_URL.txt)
+
+The dashboard includes research-oriented views covering:
+
+* Overview
+* Detection Metrics
+* SHAP Explainability
+* Triage Rationale
+* NIST Risk Mapping
+* Near-Real-Time Performance
+
+A persistent dashboard URL is maintained in:
+
+`dashboard/cycle-3/DASHBOARD_URL.txt`
+
+---
+
+# 📂 Repository Structure
+
+```text
+ER-CyRIS/
+│
+├── cycle-1/
+│   ├── notebooks/
+│   ├── src/
+│   ├── results/
+│   ├── figures/
+│   └── environment/
+│
+├── cycle-2/
+│   ├── notebooks/
+│   ├── src/
+│   ├── results/
+│   ├── figures/
+│   └── requirements.txt
+│
+├── cycle-3/
+│   ├── notebooks/
+│   ├── src/
+│   ├── governance-validation/
+│   ├── framework-refinement/
+│   ├── results/
+│   ├── figures/
+│   └── requirements.txt
+│
+├── dashboard/
+│   └── cycle-3/
+│       ├── README.md
+│       └── DASHBOARD_URL.txt
+│
+├── docs/
+│   └── PUBLIC_DATA_BOUNDARY.md
+│
+└── README.md
+```
+
+---
+
+# 🧪 Research Artifacts
+
+| Research Cycle | Artifact                         | Repository Location                                                                          |
+| -------------- | -------------------------------- | -------------------------------------------------------------------------------------------- |
+| Cycle 1        | Experimental notebooks           | [`cycle-1/notebooks/`](cycle-1/notebooks/)                                                   |
+| Cycle 1        | Results and figures              | [`cycle-1/results/`](cycle-1/results/)                                                       |
+| Cycle 2        | Final experimental notebook      | [`cycle-2/notebooks/`](cycle-2/notebooks/)                                                   |
+| Cycle 2        | M0–M4 ablation modules           | [`cycle-2/src/`](cycle-2/src/)                                                               |
+| Cycle 2        | Evaluation utilities             | [`cycle-2/src/`](cycle-2/src/)                                                               |
+| Cycle 3        | Corrected research notebook      | [`cycle-3/notebooks/`](cycle-3/notebooks/)                                                   |
+| Cycle 3        | Dashboard source                 | [`cycle-3/src/dashboard_gradio.py`](cycle-3/src/dashboard_gradio.py)                         |
+| Cycle 3        | Governance validation instrument | [`cycle-3/src/governance_validation_round1.gs`](cycle-3/src/governance_validation_round1.gs) |
+| Cycle 3        | Framework refinement             | [`cycle-3/framework-refinement/`](cycle-3/framework-refinement/)                             |
+| Cycle 3        | Live dashboard                   | [`dashboard/cycle-3/`](dashboard/cycle-3/)                                                   |
+
+---
+
+# 🧩 ER-CyRIS Mechanism
+
+The ER-CyRIS framework is organized around a hierarchical mechanism rather than a collection of independent technical components.
+
+The intended relationship is:
+
+```text
+Technical Artifact
+       ↓
+Cybersecurity Evidence
+       ↓
+Explainable Interpretation
+       ↓
+Risk Judgment
+       ↓
+Human Authority / Oversight
+       ↓
+Accountable Reliance
+       ↓
+Organizational Learning
+```
+
+Accordingly, the technical model is treated as a producer of evidence rather than as the final decision authority.
+
+The framework distinguishes between:
+
+1. **technical evidence generation**;
+2. **interpretation of evidence**;
+3. **risk judgment**;
+4. **human decision authority**;
+5. **accountability mechanisms**; and
+6. **organizational learning**.
+
+This distinction is central to the scientific argument of ER-CyRIS.
+
+---
+
+# 🔄 M7 → M3 Feedback Boundary
+
+The relationship between **M7 and M3** is retained as a:
+
+> **Proposed Design-Level Feedback Path**
+
+This relationship represents a conceptual mechanism for using governance and operational feedback to inform subsequent refinement of the technical pipeline.
+
+The current research does **not** claim that the prototype has demonstrated:
+
+* automatic pruning;
+* automatic retraining;
+* autonomous model adaptation;
+* closed-loop adaptation; or
+* fully automated governance feedback.
+
+These mechanisms remain future implementation and validation directions unless explicitly supported by executed experiments.
+
+This boundary is maintained to distinguish the **implemented prototype** from the **proposed framework mechanism**.
+
+---
+
+# 👥 Governance Expert Validation
+
+Technical validation and governance expert validation are treated as two different forms of evidence.
+
+### Technical Validation
+
+Technical validation evaluates whether the computational system can produce technically meaningful evidence, alerts, explanations, and performance measurements.
+
+### Governance Expert Validation
+
+Governance expert validation evaluates whether the proposed mechanisms for:
+
+* evidence interpretation;
+* risk judgment;
+* escalation;
+* human oversight;
+* override;
+* accountable reliance; and
+* organizational learning
+
+are considered reasonable and acceptable by relevant experts.
+
+The governance validation is therefore not interpreted simply as a percentage of agreement.
+
+Disagreement is treated as potentially valuable evidence for framework refinement.
+
+The intended refinement process is:
+
+```text
+Initial ER-CyRIS
+       ↓
+Expert Validation
+       ↓
+Agreement / Disagreement Analysis
+       ↓
+Identification of Weaknesses
+       ↓
+Framework Refinement
+       ↓
+Refined ER-CyRIS
+```
+
+---
+
+# 🔐 Data Availability and Research Boundary
+
+This repository is designed to provide reproducible computational artifacts while respecting data confidentiality.
+
+Publicly shareable code, notebooks, documentation, and research artifacts may be included in the repository.
+
+Institutional security logs, identifiable academic-system records, expert-response datasets, credentials, API keys, and other sensitive materials are not publicly released.
+
+Where sensitive data are required to execute a particular experiment, the repository provides the corresponding computational logic or documentation without exposing the underlying confidential data.
+
+See:
+
+[`docs/PUBLIC_DATA_BOUNDARY.md`](docs/PUBLIC_DATA_BOUNDARY.md)
+
+---
+
+# 📊 Reproducibility
+
+The repository provides:
+
+* research notebooks;
+* source-code modules;
+* evaluation utilities;
+* environment requirements;
+* dashboard source;
+* validation instruments;
+* research documentation; and
+* supporting results.
+
+The notebooks document the computational workflow used during the corresponding research cycle.
+
+Exact reproduction of experiments involving institutional data may require access to the original controlled datasets and research environment.
+
+---
+
+# 📚 Publications
+
+The repository also documents the research outputs associated with the three research cycles.
 
 ### Cycle 1
 
-* Experimental notebooks
-* Dataset preprocessing
-* Model comparison
-* Robustness experiments
-* Operational weakness analysis
-* Supporting figures and results
+* Published research output in **MATRIK — Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer**, Sinta 2.
+* A second Cycle 1 manuscript has been accepted and is scheduled for publication.
 
 ### Cycle 2
 
-* Log representation
-* Preprocessing pipeline
-* Robustness analysis
-* Explainability-related experiments
-* Supporting results
+* Research output accepted for publication in **IJEECS — Indonesian Journal of Electrical Engineering and Computer Science**, Sinta 1.
 
-### Cycle 3
-
-* ER-CyRIS conceptual architecture
-* M1–M7 mechanism
-* Governance validation materials
-* Agreement/disagreement analysis
-* Framework refinement
-* Supporting dashboard and visualization artifacts
+Publication information and links are maintained in the corresponding repository documentation.
 
 ---
 
-# ER-CyRIS Architecture
+# ⚖️ Scientific Scope
 
-The conceptual architecture consists of seven major components (M1–M7) connecting technical cybersecurity processing with risk intelligence and governance.
+ER-CyRIS should not be interpreted as a claim that machine-learning predictions independently determine cybersecurity risk decisions.
 
-The architecture should be interpreted as a **mechanism**, rather than merely a sequence of computational modules.
+The framework instead investigates how technical evidence and explainable outputs can be incorporated into a broader mechanism in which authorized human actors retain responsibility for risk judgment and consequential decisions.
 
-The principal conceptual flow is:
+The scientific contribution therefore lies in the mechanism connecting:
 
-```text
-Security / System Evidence
-          ↓
-   Detection & Analysis
-          ↓
-   Explainable Evidence
-          ↓
-    Risk Interpretation
-          ↓
-     Human Judgment
-          ↓
- Decision / Escalation / Override
-          ↓
-   Accountable Reliance
-          ↓
- Organizational Learning
-```
+**technical evidence → interpretation → risk judgment → accountable human reliance**
 
-The proposed **M7 → M3** feedback path represents a design-level mechanism for future refinement. Automatic retraining, pruning, or closed-loop adaptation are outside the demonstrated scope unless explicitly supported by experimental evidence.
+rather than in the accumulation of independent machine-learning components.
 
 ---
 
-# Research Transparency
+# 🎓 Dissertation Research Context
 
-This repository is maintained as a public research companion to the ER-CyRIS research program.
+ER-CyRIS is developed as part of doctoral research in Informatics with a focus on cybersecurity, explainable machine learning, digital transformation engineering, and accountable cybersecurity risk intelligence.
 
-Where appropriate, the repository distinguishes between:
-
-* **Published evidence**
-* **Accepted / forthcoming publications**
-* **Executed experiments**
-* **Conceptual framework components**
-* **Proposed mechanisms**
-* **Future implementation directions**
-
-This distinction is maintained to avoid overstating the empirical status of research components.
+The repository serves as a supporting research artifact and evidence trail for the dissertation.
 
 ---
 
-# Citation
+## License and Use
 
-If you use the research materials or findings from this repository, please cite the corresponding publications listed above.
+The repository is intended primarily for academic research, transparency, and reproducibility.
 
----
-
-# Researcher
-
-**Fathoni Mahardika**
-
-Doctoral Researcher in Informatics
-Universitas Amikom Yogyakarta
-
-Research focus:
-
-* Cybersecurity
-* Explainable AI
-* Machine Learning
-* Cybersecurity Risk Management
-* Information Systems Security
-* AI Governance
-* Accountable AI
-* ER-CyRIS
-
-Repository:
-https://github.com/Fathoni89/ER-CyRIS
+Users should cite the corresponding publications and dissertation when using or discussing the research artifacts.
