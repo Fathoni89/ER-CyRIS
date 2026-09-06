@@ -1,4 +1,4 @@
-# ER-CyRIS — Explainable Real-Time Cybersecurity Risk Intelligence
+# ER-CyRIS - Explainable Real-Time Cybersecurity Risk Intelligence
 
 ![Publications](https://img.shields.io/badge/Publications-5-1F4E79)
 [![SLR 1](https://img.shields.io/badge/SLR-IEEE%20ICAISD%202025%20%C2%B7%20Published-2E7D32)](https://doi.org/10.1109/ICAISD68166.2025.11385757)
@@ -36,7 +36,7 @@ Full citations, acceptance evidence, and BibTeX entries are given below and in t
 | 5 | Cycle 2 | **IJEECS** — Indonesian Journal of Electrical Engineering and Computer Science (IAES) | Sinta 1 · Scopus | 🕓 **Accepted** — tentatively September 2026 issue | Paper ID #46518 |
 
 **Cycle 3** outputs (framework integration and governance expert validation) are in preparation.
-### 1 · SLR — Published (IEEE ICAISD 2025)
+### 1 · SLR - Published (IEEE ICAISD 2025)
 
 > Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2025). **A Systematic Literature Review on Machine Learning-Based Information Security Risk Management for Higher Education Institutions.** In *2025 IEEE International Conference on Advanced Information Scientific Development (ICAISD)* (pp. 84–89). Jakarta, Indonesia: IEEE.
 
@@ -47,7 +47,7 @@ performance. Identifies hybrid ML models, Explainable AI, and semi-supervised ap
 emerging directions, and establishes the first half of the dissertation gap: **research on
 information security risk management specific to higher-education settings remains scarce.**
 
-### 2 · SLR — Published (IEEE CITSM 2025)
+### 2 · SLR - Published (IEEE CITSM 2025)
 
 > Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2025). **Towards Transparent Cyber Threat Detection: A Systematic Literature Review on the Role of Explainable AI (XAI) in Information Security Risk Management (2018–2025).** In *2025 13th International Conference on Cyber and IT Service Management (CITSM)* (pp. 1–4). Jakarta, Indonesia: IEEE.
 
@@ -64,7 +64,7 @@ that ER-CyRIS is designed to close.
 > 2025 establishes *what* is missing there — explanation that reaches risk decisions rather than
 > stopping at model interpretation. ER-CyRIS is the artifact built in response to both.
 
-### 1 · Cycle 1 — Published (MATRIK, Sinta 2)
+### 1 · Cycle 1 - Published (MATRIK, Sinta 2)
 
 > Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2026). **Operational Weakness Mapping of Machine Learning–Based Intrusion Detection Systems under Realistic Deployment Scenarios.** *MATRIK: Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer*, 25(3), 491–508.
 
@@ -72,7 +72,7 @@ that ER-CyRIS is designed to close.
 
 Establishes the **weakness-mapping evidence** that motivates ER-CyRIS: supervised detectors reach near-perfect baseline scores yet degrade sharply under realistic deployment perturbations. Datasets: CICIDS2017, CICIDS2018, UNSW-NB15, RanSMAP.
 
-### 2 · Cycle 1 — Accepted, in press (JUTIF, Sinta 2)
+### 2 · Cycle 1 - Accepted, in press (JUTIF, Sinta 2)
 
 > Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2026). **Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest.** *JUTIF: Jurnal Teknik Informatika*, 7(5). *In press.*
 
@@ -80,7 +80,7 @@ Accepted 24 February 2026 · Letter of Acceptance No. **5711/LoA/JUTIF/II/2026**
 
 Develops the **SHAP-guided failure casebook** and the SOC triage rationale that becomes the explainability layer of ER-CyRIS.
 
-### 3 · Cycle 2 — Accepted (IJEECS, Sinta 1 / Scopus)
+### 3 · Cycle 2 - Accepted (IJEECS, Sinta 1 / Scopus)
 
 > Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2026). **Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS.** *Indonesian Journal of Electrical Engineering and Computer Science*. *Accepted for publication.*
 
@@ -111,7 +111,7 @@ The research focuses on maintaining a clear relationship between:
 
 # 🔬 Research Cycles
 
-## Cycle 1 — Technical Detection and Robustness
+## Cycle 1 - Technical Detection and Robustness
 
 Cycle 1 establishes the technical foundation of ER-CyRIS through experiments using public cybersecurity datasets.
 
@@ -139,7 +139,7 @@ Cycle 1 also includes an **anti-leakage audit** (deduplication, fit-on-training-
 
 ---
 
-## Cycle 2 — Log Representation and Stability
+## Cycle 2 - Log Representation and Stability
 
 Cycle 2 focuses on the development and evaluation of a log-representation and preprocessing pipeline for academic information-system security logs.
 
@@ -175,7 +175,7 @@ The main methodological components include:
 
 ---
 
-## Cycle 3 — ER-CyRIS Integration and Governance Validation
+## Cycle 3 - ER-CyRIS Integration and Governance Validation
 
 Cycle 3 integrates the technical evidence developed in the previous cycles into the ER-CyRIS research prototype.
 
