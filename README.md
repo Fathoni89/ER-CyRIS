@@ -1,6 +1,8 @@
 # ER-CyRIS — Explainable Real-Time Cybersecurity Risk Intelligence
 
-![Publications](https://img.shields.io/badge/Publications-3-1F4E79)
+![Publications](https://img.shields.io/badge/Publications-5-1F4E79)
+[![SLR 1](https://img.shields.io/badge/SLR-IEEE%20ICAISD%202025%20%C2%B7%20Published-2E7D32)](https://doi.org/10.1109/ICAISD68166.2025.11385757)
+[![SLR 2](https://img.shields.io/badge/SLR-IEEE%20CITSM%202025%20%C2%B7%20Published-2E7D32)](https://doi.org/10.1109/CITSM67730.2025.11291277)
 [![Cycle 1](https://img.shields.io/badge/Cycle%201-MATRIK%20(Sinta%202)%20%C2%B7%20Published-2E7D32)](https://doi.org/10.30812/matrik.v25i3.6147)
 ![Cycle 1b](https://img.shields.io/badge/Cycle%201-JUTIF%20(Sinta%202)%20%C2%B7%20In%20Press-F57C00)
 ![Cycle 2](https://img.shields.io/badge/Cycle%202-IJEECS%20(Sinta%201%2FScopus)%20%C2%B7%20Accepted-F57C00)
@@ -20,17 +22,47 @@ This repository therefore distinguishes clearly between **implemented computatio
 
 ---
 
-## 📚 Publication Status
+Five peer-reviewed outputs are associated with this research: two systematic literature reviews
+that establish the research gap, and three cycle outputs that build and validate the framework.
+Full citations, acceptance evidence, and BibTeX entries are given below and in the
+[Publication Records](#-publication-records) appendix at the end of this page.
 
-Three peer-reviewed outputs are associated with this research. Full citations, acceptance evidence, and BibTeX entries are given below and in the [Publication Records](#-publication-records) appendix at the end of this page.
-
-| # | Cycle | Venue | Accreditation | Status | Identifier |
-| :-: | :---- | :---- | :------------ | :----- | :--------- |
-| 1 | Cycle 1 | **MATRIK** — Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer (Universitas Bumigora) | Sinta 2 | ✅ **Published** — Vol. 25 No. 3, July 2026, pp. 491–508 | [10.30812/matrik.v25i3.6147](https://doi.org/10.30812/matrik.v25i3.6147) |
-| 2 | Cycle 1 | **JUTIF** — Jurnal Teknik Informatika (Universitas Jenderal Soedirman) | Sinta 2 | 🕓 **Accepted / In Press** — Vol. 7 No. 5, October 2026 | LoA No. 5711/LoA/JUTIF/II/2026 |
-| 3 | Cycle 2 | **IJEECS** — Indonesian Journal of Electrical Engineering and Computer Science (IAES) | Sinta 1 · Scopus | 🕓 **Accepted** — tentatively September 2026 issue | Paper ID #46518 |
+| # | Stage | Venue | Indexing | Status | Identifier |
+| :-: | :---- | :---- | :------- | :----- | :--------- |
+| 1 | SLR — gap identification | **IEEE ICAISD 2025** — International Conference on Advanced Information Scientific Development, Jakarta | IEEE Xplore | ✅ **Published** — 4 November 2025, pp. 84–89 | [10.1109/ICAISD68166.2025.11385757](https://doi.org/10.1109/ICAISD68166.2025.11385757) |
+| 2 | SLR — gap identification | **IEEE CITSM 2025** — 13th International Conference on Cyber and IT Service Management, Jakarta | IEEE Xplore | ✅ **Published** — 25 September 2025, pp. 1–4 | [10.1109/CITSM67730.2025.11291277](https://doi.org/10.1109/CITSM67730.2025.11291277) |
+| 3 | Cycle 1 | **MATRIK** — Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer (Universitas Bumigora) | Sinta 2 | ✅ **Published** — Vol. 25 No. 3, July 2026, pp. 491–508 | [10.30812/matrik.v25i3.6147](https://doi.org/10.30812/matrik.v25i3.6147) |
+| 4 | Cycle 1 | **JUTIF** — Jurnal Teknik Informatika (Universitas Jenderal Soedirman) | Sinta 2 | 🕓 **Accepted / In Press** — Vol. 7 No. 5, October 2026 | LoA No. 5711/LoA/JUTIF/II/2026 |
+| 5 | Cycle 2 | **IJEECS** — Indonesian Journal of Electrical Engineering and Computer Science (IAES) | Sinta 1 · Scopus | 🕓 **Accepted** — tentatively September 2026 issue | Paper ID #46518 |
 
 **Cycle 3** outputs (framework integration and governance expert validation) are in preparation.
+### 1 · SLR — Published (IEEE ICAISD 2025)
+
+> Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2025). **A Systematic Literature Review on Machine Learning-Based Information Security Risk Management for Higher Education Institutions.** In *2025 IEEE International Conference on Advanced Information Scientific Development (ICAISD)* (pp. 84–89). Jakarta, Indonesia: IEEE.
+
+🔗 <https://ieeexplore.ieee.org/document/11385757> · DOI: [10.1109/ICAISD68166.2025.11385757](https://doi.org/10.1109/ICAISD68166.2025.11385757)
+
+Screens 316 publications down to 38 synthesised studies, of which 10 are analysed on reported
+performance. Identifies hybrid ML models, Explainable AI, and semi-supervised approaches as
+emerging directions, and establishes the first half of the dissertation gap: **research on
+information security risk management specific to higher-education settings remains scarce.**
+
+### 2 · SLR — Published (IEEE CITSM 2025)
+
+> Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2025). **Towards Transparent Cyber Threat Detection: A Systematic Literature Review on the Role of Explainable AI (XAI) in Information Security Risk Management (2018–2025).** In *2025 13th International Conference on Cyber and IT Service Management (CITSM)* (pp. 1–4). Jakarta, Indonesia: IEEE.
+
+🔗 <https://ieeexplore.ieee.org/document/11291277> · DOI: [10.1109/CITSM67730.2025.11291277](https://doi.org/10.1109/CITSM67730.2025.11291277)
+
+PRISMA-based review of XAI in information security risk management. Finds a growing use of SHAP
+and LIME for interpreting threat-detection models, but establishes the second half of the gap:
+**explanation techniques are rarely integrated into holistic, real-time risk-management
+frameworks, particularly in institutional contexts such as higher education.** This is the gap
+that ER-CyRIS is designed to close.
+
+> **How the two reviews define the gap.** ICAISD 2025 establishes *where* the gap is — higher
+> education as an under-served context for ML-based information security risk management. CITSM
+> 2025 establishes *what* is missing there — explanation that reaches risk decisions rather than
+> stopping at model interpretation. ER-CyRIS is the artifact built in response to both.
 
 ### 1 · Cycle 1 — Published (MATRIK, Sinta 2)
 
@@ -444,6 +476,93 @@ Please cite the published Cycle 1 article when referring to the weakness-mapping
 Full bibliographic records, contribution notes, BibTeX entries, and verbatim transcriptions of the acceptance letters.
 
 **Author team (all outputs):** Fathoni Mahardika (Universitas Sebelas April, Sumedang) · Ema Utami · Kusrini · Ferry Wahyu Wibowo (Universitas Amikom Yogyakarta)
+### SLR — First review (IEEE ICAISD 2025)
+
+**Status:** ✅ Published
+
+**Title:** A Systematic Literature Review on Machine Learning-Based Information Security Risk Management for Higher Education Institutions
+
+**Conference:** 2025 IEEE International Conference on Advanced Information Scientific Development (ICAISD)
+**Location:** Jakarta, Indonesia
+**Publisher:** IEEE
+**Date added to IEEE Xplore:** 4 November 2025
+**Pages:** 84–89
+**Electronic ISBN:** 979-8-3315-7499-4
+**DOI:** [10.1109/ICAISD68166.2025.11385757](https://doi.org/10.1109/ICAISD68166.2025.11385757)
+**Article URL:** <https://ieeexplore.ieee.org/document/11385757>
+
+**Contribution to ER-CyRIS.** Establishes the contextual gap. From an initial pool of 316
+publications, 38 peer-reviewed studies are synthesised and 10 are analysed further on reported
+performance. The review maps emerging trends — hybrid machine-learning models, Explainable AI,
+and semi-supervised approaches — and shows that work targeting higher-education institutions
+specifically remains limited. It proposes the direction that the dissertation then follows: a
+scalable, privacy-aware risk-management framework fitted to the constraints of academic
+institutions.
+
+**Author keywords:** Systematic Literature Review · Machine Learning · Risk Management ·
+Clustering · Explainable AI · Higher Education
+
+#### BibTeX
+
+```bibtex
+@inproceedings{mahardika2025slrisrm,
+  author    = {Mahardika, Fathoni and Utami, Ema and Kusrini and Wibowo, Ferry Wahyu},
+  title     = {A Systematic Literature Review on Machine Learning-Based Information Security Risk Management for Higher Education Institutions},
+  booktitle = {2025 IEEE International Conference on Advanced Information Scientific Development (ICAISD)},
+  year      = {2025},
+  pages     = {84--89},
+  address   = {Jakarta, Indonesia},
+  publisher = {IEEE},
+  doi       = {10.1109/ICAISD68166.2025.11385757},
+  isbn      = {979-8-3315-7499-4}
+}
+```
+
+---
+
+### SLR — Second review (IEEE CITSM 2025)
+
+**Status:** ✅ Published
+
+**Title:** Towards Transparent Cyber Threat Detection: A Systematic Literature Review on the Role of Explainable AI (XAI) in Information Security Risk Management (2018–2025)
+
+**Conference:** 2025 13th International Conference on Cyber and IT Service Management (CITSM)
+**Location:** Jakarta, Indonesia
+**Publisher:** IEEE
+**Date added to IEEE Xplore:** 25 September 2025
+**Pages:** 1–4
+**Electronic ISBN:** 979-8-3315-7585-4
+**DOI:** [10.1109/CITSM67730.2025.11291277](https://doi.org/10.1109/CITSM67730.2025.11291277)
+**Article URL:** <https://ieeexplore.ieee.org/document/11291277>
+
+**Contribution to ER-CyRIS.** Establishes the methodological gap. Following PRISMA, the review
+examines how Explainable AI is applied within information security risk management and finds a
+growing use of SHAP and LIME for interpreting threat-detection models. It also finds that these
+techniques are seldom integrated into holistic, real-time risk-management frameworks, especially
+in institutional settings such as higher education. That unmet integration is the design problem
+ER-CyRIS addresses: carrying explanation forward from model output into risk interpretation,
+risk judgment, and accountable human authority.
+
+**Author keywords:** Explainable AI · Systematic Literature Review · Information Security Risk
+Management · Cyber Threat Detection · Transparency · SHAP
+
+#### BibTeX
+
+```bibtex
+@inproceedings{mahardika2025slrxai,
+  author    = {Mahardika, Fathoni and Utami, Ema and Kusrini and Wibowo, Ferry Wahyu},
+  title     = {Towards Transparent Cyber Threat Detection: A Systematic Literature Review on the Role of Explainable {AI} ({XAI}) in Information Security Risk Management (2018-2025)},
+  booktitle = {2025 13th International Conference on Cyber and IT Service Management (CITSM)},
+  year      = {2025},
+  pages     = {1--4},
+  address   = {Jakarta, Indonesia},
+  publisher = {IEEE},
+  doi       = {10.1109/CITSM67730.2025.11291277},
+  isbn      = {979-8-3315-7585-4}
+}
+```
+
+---
 
 ### Cycle 1 — First output (MATRIK)
 
@@ -566,21 +685,23 @@ Manuscript preparation is in progress. This section will be updated when a submi
 
 | ER-CyRIS layer | Established by | Venue |
 | :------------- | :------------- | :---- |
+| Research gap — ML-based ISRM in higher education is under-served | SLR, first review | IEEE ICAISD 2025 |
+| Research gap — explanation rarely reaches real-time risk decisions | SLR, second review | IEEE CITSM 2025 |
 | Problem evidence — detector fragility under realistic conditions | Cycle 1, first output | MATRIK |
 | Explainability — failure casebook and triage rationale | Cycle 1, second output | JUTIF |
 | Representation — dual-view preprocessing and stability diagnostics | Cycle 2 | IJEECS |
 | Integration, risk interpretation, and governance validation | Cycle 3 | In preparation |
-
 ---
 
 ### Verification
 
-Readers who wish to verify these records may consult:
-
-* the DOI resolver for the published article: <https://doi.org/10.30812/matrik.v25i3.6147>;
+* the DOI resolvers for the three published outputs:
+  <https://doi.org/10.1109/ICAISD68166.2025.11385757>,
+  <https://doi.org/10.1109/CITSM67730.2025.11291277>, and
+  <https://doi.org/10.30812/matrik.v25i3.6147>;
+* the IEEE Xplore record pages: <https://ieeexplore.ieee.org/document/11385757> and
+  <https://ieeexplore.ieee.org/document/11291277>;
 * the journal article page: <https://journal.universitasbumigora.ac.id/matrik/article/view/6147>;
-* the verbatim transcriptions of the Letters of Acceptance below; and
-* the SINTA accreditation records of each journal.
 
 Accepted-but-unpublished items are marked as such throughout this repository, and no claim of publication is made for them until the corresponding issue is released.
 
