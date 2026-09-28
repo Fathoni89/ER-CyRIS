@@ -1,475 +1,61 @@
-# ER-CyRIS - Explainable Real-Time Cybersecurity Risk Intelligence
+# ER-CyRIS — Explainable and Reliable Cyber-Risk Incident Response
 
-![Publications](https://img.shields.io/badge/Publications-5-1F4E79)
-[![SLR 1](https://img.shields.io/badge/SLR-IEEE%20ICAISD%202025%20%C2%B7%20Published-2E7D32)](https://doi.org/10.1109/ICAISD68166.2025.11385757)
-[![SLR 2](https://img.shields.io/badge/SLR-IEEE%20CITSM%202025%20%C2%B7%20Published-2E7D32)](https://doi.org/10.1109/CITSM67730.2025.11291277)
-[![Cycle 1](https://img.shields.io/badge/Cycle%201-MATRIK%20(Sinta%202)%20%C2%B7%20Published-2E7D32)](https://doi.org/10.30812/matrik.v25i3.6147)
-![Cycle 1b](https://img.shields.io/badge/Cycle%201-JUTIF%20(Sinta%202)%20%C2%B7%20In%20Press-F57C00)
-![Cycle 2](https://img.shields.io/badge/Cycle%202-IJEECS%20(Sinta%201%2FScopus)%20%C2%B7%20Accepted-F57C00)
-[![License](https://img.shields.io/badge/License-Academic%20Research-lightgrey)](LICENSE)
+Research repository for the dissertation **“Explainable and Reliable Cyber-Risk Incident Response (ER-CyRIS) untuk Sistem Informasi Organisasi.”** The current research direction is to design an explainable AI framework that connects source-aware evidence, detection, explanation reliability, conditional organizational risk, and authorized incident response. A high detector score or a SHAP attribution is not by itself a verified threat, risk estimate, or permission to act.
 
-**ER-CyRIS** is a research framework developed in a doctoral dissertation on real-time cyber threat detection and explainable cybersecurity risk intelligence for academic information systems.
+## Research sequence and evidence status
 
-This repository provides the computational artifacts, experimental notebooks, source code, dashboard prototype, and supporting documentation developed across three research cycles.
+| Stage | Work | What the archive supports |
+| --- | --- | --- |
+| Pre-research | Two systematic literature reviews identify limitations in ML-based security risk management and the use of XAI beyond model interpretation. | Motivation and research gap, not validation of the proposed framework. |
+| Cycle 1 / RM1 | Controlled baselines, operational stress tests, SHAP diagnostics, and mapping of W1–W6. | Weaknesses under specified datasets, models, splits and perturbations; W3 is algorithmic alert inflation, not observed analyst fatigue. |
+| Cycle 2 / RM2 | Design the **entire M1–M6 framework**, including inputs, rules and failure states for M5 risk translation and M6 governed response. Assess available technical components with bounded experiments. | Design specification and limited technical evidence; organizational risk/response effectiveness remains unproved. |
+| Cycle 3 | Test frozen interfaces on independently checked log, threat, asset, policy and action records, when available. | The existing v3.5 notebook/dashboard and its metrics are historical prototype evidence, not automatic validation of the revised M1–M6 chain. |
 
-The central research argument of ER-CyRIS is not limited to anomaly detection or explainable machine learning. ER-CyRIS is designed to connect:
+**Important distinction:** The published IJEECS paper studies dual-view preprocessing, M0–M4 *ablation configurations*, and Feature Stability Score (FSS). Those M0–M4 labels are **not** architectural M1–M4. A separate framework-design paper is being prepared to address the broader Cycle 2 objective; it is not listed as published here.
 
-**Technical Evidence → Explainability → Risk Interpretation → Risk Judgment → Human Authority → Accountable Reliance → Organizational Learning**
+## Current ER-CyRIS framework (specified in Cycle 2)
 
-This repository therefore distinguishes clearly between **implemented computational artifacts**, **empirical evidence**, and **conceptual/proposed mechanisms**.
+| Module | Contract | State of evidence |
+| --- | --- | --- |
+| **M1 — context and evidence intake** | Keep source, time, observation unit, transformation version and missingness with the log features. | In an earlier UNSW test, `q_e` measured only completeness of 43 features; it did not verify provenance or asset context. |
+| **M2 — robust detection** | Use versioned model, preprocessing, threshold and operating condition to produce a candidate alert and detector margin. | Prior model and perturbation experiments are bounded technical evidence. An uncalibrated `predict_proba` score is not organizational incident likelihood. |
+| **M3 — explanation reliability** | Record SHAP target/background and local diagnostics with unavailable states. | Global top-k FSS and local diagnostics are different tests. Neither proves explanation fidelity or the correct threat subtype by itself. |
+| **M4 — evidence qualification** | Apply separate source, detector and explanation checks; issue `no_alert`, `accept`, `warn` or `abstain` with a reason. | On the earlier second UNSW file, the historical SHAP condition added no exclusion from the accepted set beyond margin-only in the reported strata; `q_e` was logged but not a veto. A revised rule requires new confirmatory data. |
+| **M5 — threat-to-risk translation** | Require an independently auditable threat class, time-valid asset, unique approved scenario/likelihood, CIA impacts and versioned risk bands. | Rules and missing-input outcomes are specified in Cycle 2. If inputs fail, return `RISK_NOT_COMPUTABLE` with a reason; no fabricated numeric risk. |
+| **M6 — governed response** | Match a valid M5 case to a unique approved playbook; distinguish recommendation, role authorization, actual action and outcome. | Rules are specified in Cycle 2. No approval or policy match means no automatic execution; effectiveness needs independently observed records. |
 
-> **Repository snapshot for dissertation appendix.** This README is referenced as a supporting appendix to the dissertation. Snapshot date: **1 September 2026**. Publication statuses below reflect that date and are evidenced in the [Publication Records](#-publication-records) section at the end of this page.
+The unit of analysis moves from **observation → candidate alert → qualified alert → verified threat–asset scenario → recommendation → authorized action**. Examples built from assumed M5/M6 inputs illustrate the calculation but are not measured outcomes.
 
----
+## Publication status
 
-Five peer-reviewed outputs are associated with this research: two systematic literature reviews
-that establish the research gap, and three cycle outputs that build and validate the framework.
-Full citations, acceptance evidence, and BibTeX entries are given below and in the
-[Publication Records](#-publication-records) appendix at the end of this page.
+| Output | Current record | Role in this dissertation |
+| --- | --- | --- |
+| IEEE ICAISD 2025 and IEEE CITSM 2025 | [SLR 1](https://doi.org/10.1109/ICAISD68166.2025.11385757) · [SLR 2](https://doi.org/10.1109/CITSM67730.2025.11291277) | Research gap. |
+| MATRIK 25(3), 2026 | [Published](https://doi.org/10.30812/matrik.v25i3.6147) | Operational weakness mapping, Cycle 1. |
+| JUTIF 7(5), 2026 | Accepted / in press per the acceptance record below | SHAP failure casebook and diagnostic rationale, Cycle 1. |
+| **IJEECS 43(3), 2026, pp. 871–879** | **[Published; DOI 10.11591/ijeecs.v43.i3.pp871-879](https://doi.org/10.11591/ijeecs.v43.i3.pp871-879)** | Prior preprocessing/representation evidence within Cycle 2; **not** validation of the complete M1–M6 architecture. |
+| New Cycle 2 framework-design paper | In preparation | Will present the M1–M6 framework and its bounded evidence; no publication claim. |
 
-| # | Stage | Venue | Indexing | Status | Identifier |
-| :-: | :---- | :---- | :------- | :----- | :--------- |
-| 1 | SLR — gap identification | **IEEE ICAISD 2025** — International Conference on Advanced Information Scientific Development, Jakarta | IEEE Xplore | ✅ **Published** — 4 November 2025, pp. 84–89 | [10.1109/ICAISD68166.2025.11385757](https://doi.org/10.1109/ICAISD68166.2025.11385757) |
-| 2 | SLR — gap identification | **IEEE CITSM 2025** — 13th International Conference on Cyber and IT Service Management, Jakarta | IEEE Xplore | ✅ **Published** — 25 September 2025, pp. 1–4 | [10.1109/CITSM67730.2025.11291277](https://doi.org/10.1109/CITSM67730.2025.11291277) |
-| 3 | Cycle 1 | **MATRIK** — Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer (Universitas Bumigora) | Sinta 2 | ✅ **Published** — Vol. 25 No. 3, July 2026, pp. 491–508 | [10.30812/matrik.v25i3.6147](https://doi.org/10.30812/matrik.v25i3.6147) |
-| 4 | Cycle 1 | **JUTIF** — Jurnal Teknik Informatika (Universitas Jenderal Soedirman) | Sinta 2 | 🕓 **Accepted / In Press** — Vol. 7 No. 5, October 2026 | LoA No. 5711/LoA/JUTIF/II/2026 |
-| 5 | Cycle 2 | **IJEECS** — Indonesian Journal of Electrical Engineering and Computer Science (IAES) | Sinta 1 · Scopus | 🕓 **Accepted** — tentatively September 2026 issue | Paper ID #46518 |
+## Artifact guide
 
-**Cycle 3** outputs (framework integration and governance expert validation) are in preparation.
-### 1 · SLR - Published (IEEE ICAISD 2025)
+- [Cycle 1](cycle-1/): notebooks, stress tests, weakness mapping, figures and results.
+- [Cycle 2](cycle-2/): published preprocessing ablations plus later technical probes and fixed-protocol gate notebooks. Historical M0–M4 source files remain unchanged to preserve reproducibility.
+- [Cycle 3](cycle-3/): historical institutional v3.5 prototype, notebook, derived results, dashboard source and a separate governance instrument.
+- [Cycle 3 live dashboard](https://ercyris-siklus3-v3.fathoni-ee4.workers.dev/): presentation of historical prototype outputs; not a claim of full organizational validation.
 
-> Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2025). **A Systematic Literature Review on Machine Learning-Based Information Security Risk Management for Higher Education Institutions.** In *2025 IEEE International Conference on Advanced Information Scientific Development (ICAISD)* (pp. 84–89). Jakarta, Indonesia: IEEE.
+Some historical material uses the older **M1–M7** labels or an **M7 → M3** feedback arrow. They do not map one-to-one to the current M1–M6 modules, and the arrow does not demonstrate automatic retraining or a closed loop.
 
-🔗 <https://ieeexplore.ieee.org/document/11385757> · DOI: [10.1109/ICAISD68166.2025.11385757](https://doi.org/10.1109/ICAISD68166.2025.11385757)
+Archived columns called `PR_AUC` may contain scikit-learn **Average Precision (AP)**; confirm the producing function in the relevant notebook. Do not silently interpret those figures as trapezoidal area under the precision–recall curve.
 
-Screens 316 publications down to 38 synthesised studies, of which 10 are analysed on reported
-performance. Identifies hybrid ML models, Explainable AI, and semi-supervised approaches as
-emerging directions, and establishes the first half of the dissertation gap: **research on
-information security risk management specific to higher-education settings remains scarce.**
+## Scope and data handling
 
-### 2 · SLR - Published (IEEE CITSM 2025)
+Publication of a detector score does not establish attack-class accuracy, organizational risk validity, policy compliance or a successful response. M4's revised marginal benefit must be evaluated on data not used to change its rule; the already examined second UNSW file cannot serve as its independent confirmation. Expert questionnaires, if used, are supplementary governance evidence rather than the primary reference for technical risk/response correctness.
 
-> Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2025). **Towards Transparent Cyber Threat Detection: A Systematic Literature Review on the Role of Explainable AI (XAI) in Information Security Risk Management (2018–2025).** In *2025 13th International Conference on Cyber and IT Service Management (CITSM)* (pp. 1–4). Jakarta, Indonesia: IEEE.
+**Release review required:** existing `cycle-3/results/` includes event-level institutional CSV material, although earlier repository text said no such records were public. Preserve controlled originals for research audit and review each public file for identifiers, timestamps, event text and answer-key content before further distribution. Removing a file in a new commit would not erase its prior Git history. No files are deleted by this README update.
 
-🔗 <https://ieeexplore.ieee.org/document/11291277> · DOI: [10.1109/CITSM67730.2025.11291277](https://doi.org/10.1109/CITSM67730.2025.11291277)
+## Citation records and original publication details
 
-PRISMA-based review of XAI in information security risk management. Finds a growing use of SHAP
-and LIME for interpreting threat-detection models, but establishes the second half of the gap:
-**explanation techniques are rarely integrated into holistic, real-time risk-management
-frameworks, particularly in institutional contexts such as higher education.** This is the gap
-that ER-CyRIS is designed to close.
-
-> **How the two reviews define the gap.** ICAISD 2025 establishes *where* the gap is — higher
-> education as an under-served context for ML-based information security risk management. CITSM
-> 2025 establishes *what* is missing there — explanation that reaches risk decisions rather than
-> stopping at model interpretation. ER-CyRIS is the artifact built in response to both.
-
-### 1 · Cycle 1 - Published (MATRIK, Sinta 2)
-
-> Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2026). **Operational Weakness Mapping of Machine Learning–Based Intrusion Detection Systems under Realistic Deployment Scenarios.** *MATRIK: Jurnal Manajemen, Teknik Informatika dan Rekayasa Komputer*, 25(3), 491–508.
-
-🔗 <https://journal.universitasbumigora.ac.id/matrik/article/view/6147> · DOI: [10.30812/matrik.v25i3.6147](https://doi.org/10.30812/matrik.v25i3.6147)
-
-Establishes the **weakness-mapping evidence** that motivates ER-CyRIS: supervised detectors reach near-perfect baseline scores yet degrade sharply under realistic deployment perturbations. Datasets: CICIDS2017, CICIDS2018, UNSW-NB15, RanSMAP.
-
-### 2 · Cycle 1 - Accepted, in press (JUTIF, Sinta 2)
-
-> Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2026). **Operational Diagnostics for Intrusion Detection: SHAP-Guided Failure Casebook and SOC Triage Rationale with XGBoost and RandomForest.** *JUTIF: Jurnal Teknik Informatika*, 7(5). *In press.*
-
-Accepted 24 February 2026 · Letter of Acceptance No. **5711/LoA/JUTIF/II/2026** · Scheduled for **Volume 7 Number 5, October 2026** · P-ISSN 2723-3863, E-ISSN 2723-3871 · Sinta 2 (Decree No. 177/E/KPT/2024).
-
-Develops the **SHAP-guided failure casebook** and the SOC triage rationale that becomes the explainability layer of ER-CyRIS.
-
-### 3 · Cycle 2 - Accepted (IJEECS, Sinta 1 / Scopus)
-
-> Mahardika, F., Utami, E., Kusrini, & Wibowo, F. W. (2026). **Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS.** *Indonesian Journal of Electrical Engineering and Computer Science*. *Accepted for publication.*
-
-Accepted 19 August 2026 · Paper ID **#46518** · Tentatively scheduled for the **September 2026** issue · Published by the Institute of Advanced Engineering and Science (IAES) · P-ISSN 2502-4752, E-ISSN 2502-4760 · Sinta 1, Scopus-indexed.
-
-Presents the **dual-view (SV + CDV) preprocessing pipeline**, the M0–M4 ablation, and the Feature Stability Score (FSS) that form the representation layer of ER-CyRIS.
-
-📄 **Acceptance evidence** — the Letters of Acceptance are transcribed verbatim in [Publication Records](#-publication-records) below. Original documents are held by the author and available on request.
-
----
-
-## 🎯 Research Objective
-
-The research aims to develop and evaluate an explainability-aware cybersecurity risk intelligence framework that can support the translation of technical detection evidence into accountable cybersecurity risk decisions.
-
-The research focuses on maintaining a clear relationship between:
-
-* cybersecurity detection;
-* evidence generation;
-* explainable interpretation;
-* cybersecurity risk assessment;
-* operational triage;
-* human oversight;
-* governance and accountability; and
-* organizational learning.
-
----
-
-# 🔬 Research Cycles
-
-## Cycle 1 - Technical Detection and Robustness
-
-Cycle 1 establishes the technical foundation of ER-CyRIS through experiments using public cybersecurity datasets.
-
-The cycle focuses on:
-
-* anomaly and intrusion detection;
-* comparative evaluation of machine-learning approaches;
-* preprocessing and feature preparation;
-* model performance evaluation;
-* robustness analysis under noise and missing values; and
-* identification of the technical evidence required by subsequent ER-CyRIS stages.
-
-Cycle 1 also includes an **anti-leakage audit** (deduplication, fit-on-training-partition-only transformation, and cross-partition duplicate hashing) that corrects an earlier pipeline in which preprocessing was fitted before partitioning.
-
-**Published as:** MATRIK (Sinta 2) and JUTIF (Sinta 2, in press) — see [Publication Status](#-publication-status).
-
-### Main artifacts
-
-* Experimental notebooks
-* Model evaluation results
-* Robustness experiments
-* Anti-leakage audit cells
-* Supporting figures and results
-* Research documentation
-
----
-
-## Cycle 2 - Log Representation and Stability
-
-Cycle 2 focuses on the development and evaluation of a log-representation and preprocessing pipeline for academic information-system security logs.
-
-The cycle investigates how operational logs can be transformed into representations that remain:
-
-* informative;
-* stable;
-* robust to missing or noisy observations; and
-* suitable for subsequent explainability and risk-oriented analysis.
-
-The cycle includes the **M0–M4 ablation experiment** (5 preprocessing configurations × 4 datasets = 20 experimental runs) and the use of the **Feature Stability Score (FSS)** as a diagnostic stability criterion.
-
-The main methodological components include:
-
-* log preprocessing;
-* missing-value handling;
-* feature transformation;
-* token/feature preservation;
-* ablation analysis;
-* stability diagnostics; and
-* evaluation of representation quality.
-
-**Accepted as:** IJEECS (Sinta 1 / Scopus) — see [Publication Status](#-publication-status).
-
-### Main artifacts
-
-* Final Cycle 2 experimental notebook
-* M0–M4 ablation source modules
-* Evaluation utilities
-* Experimental results
-* Figures and supporting documentation
-* Python environment requirements
-
----
-
-## Cycle 3 - ER-CyRIS Integration and Governance Validation
-
-Cycle 3 integrates the technical evidence developed in the previous cycles into the ER-CyRIS research prototype.
-
-The cycle focuses on the relationship between:
-
-**Evidence → Explainability → Risk Judgment → Human Oversight → Accountable Reliance**
-
-The prototype includes computational components for:
-
-* cybersecurity detection;
-* explainability;
-* SHAP-based interpretation;
-* operational triage;
-* cybersecurity risk mapping;
-* NIST-oriented risk interpretation;
-* near-real-time performance benchmarking; and
-* governance-oriented validation.
-
-Cycle 3 uses an institutional academic information-system log dataset under a **temporal** partitioning scheme (not random splitting), preceded by a conflicting-label and duplication audit. The Cycle 3 dashboard provides an interactive representation of the implemented prototype and its analytical outputs.
-
-**Status:** Manuscript in preparation.
-
-### Main artifacts
-
-* Corrected Cycle 3 research notebook
-* Dashboard source code
-* Governance expert-validation instrument
-* Framework-refinement documentation
-* Experimental results
-* Supporting figures
-* Python environment requirements
-
----
-
-# 🗂️ Experimental Coverage
-
-Datasets used across the three cycles. Figures are taken from the executed notebooks in this repository.
-
-| Cycle | Dataset | Role |
-| :---- | :------ | :--- |
-| 1 | CICIDS2017, CICIDS2018, UNSW-NB15, RanSMAP | Robustness stress-testing under realistic deployment scenarios (S0–S5) |
-| 2 | CICIDS2018, HDFS, BGL, UNSW-NB15 | M0–M4 preprocessing ablation and cross-domain generalisation (20 runs) |
-| 3 | Institutional academic information-system logs | Calibration, NIST-oriented risk assessment, and governance expert validation |
-
-Detailed per-dataset characteristics (sample counts, feature counts, class balance, partition sizes) are documented in the dissertation appendix and in the cycle notebooks.
-
----
-
-# 🚀 Cycle 3 Live Dashboard
-
-The Cycle 3 dashboard provides an interactive view of the implemented ER-CyRIS prototype.
-
-It is intended to demonstrate how technical outputs can be presented as evidence for explainability, operational triage, and cybersecurity risk interpretation.
-
-**Live Dashboard:** [Open the ER-CyRIS Cycle 3 Dashboard](dashboard/cycle-3/DASHBOARD_URL.txt)
-
-The dashboard includes research-oriented views covering:
-
-* Overview
-* Detection Metrics
-* SHAP Explainability
-* Triage Rationale
-* NIST Risk Mapping
-* Near-Real-Time Performance
-
-A persistent dashboard URL is maintained in `dashboard/cycle-3/DASHBOARD_URL.txt`.
-
----
-
-# 📂 Repository Structure
-
-```text
-ER-CyRIS/
-│
-├── cycle-1/
-│   ├── notebooks/
-│   ├── src/
-│   ├── results/
-│   ├── figures/
-│   └── environment/
-│
-├── cycle-2/
-│   ├── notebooks/
-│   ├── src/
-│   ├── results/
-│   ├── figures/
-│   └── requirements.txt
-│
-├── cycle-3/
-│   ├── notebooks/
-│   ├── src/
-│   ├── governance-validation/
-│   ├── framework-refinement/
-│   ├── results/
-│   ├── figures/
-│   └── requirements.txt
-│
-├── dashboard/
-│   └── cycle-3/
-│       ├── README.md
-│       └── DASHBOARD_URL.txt
-│
-├── docs/
-│   └── PUBLIC_DATA_BOUNDARY.md
-│
-└── README.md
-```
-
----
-
-# 🧪 Research Artifacts
-
-| Research Cycle | Artifact                         | Repository Location                                                                          |
-| -------------- | -------------------------------- | -------------------------------------------------------------------------------------------- |
-| Cycle 1        | Experimental notebooks           | [`cycle-1/notebooks/`](cycle-1/notebooks/)                                                   |
-| Cycle 1        | Results and figures              | [`cycle-1/results/`](cycle-1/results/)                                                       |
-| Cycle 2        | Final experimental notebook      | [`cycle-2/notebooks/`](cycle-2/notebooks/)                                                   |
-| Cycle 2        | M0–M4 ablation modules           | [`cycle-2/src/`](cycle-2/src/)                                                               |
-| Cycle 2        | Evaluation utilities             | [`cycle-2/src/`](cycle-2/src/)                                                               |
-| Cycle 3        | Corrected research notebook      | [`cycle-3/notebooks/`](cycle-3/notebooks/)                                                   |
-| Cycle 3        | Dashboard source                 | [`cycle-3/src/dashboard_gradio.py`](cycle-3/src/dashboard_gradio.py)                         |
-| Cycle 3        | Governance validation instrument | [`cycle-3/src/governance_validation_round1.gs`](cycle-3/src/governance_validation_round1.gs) |
-| Cycle 3        | Framework refinement             | [`cycle-3/framework-refinement/`](cycle-3/framework-refinement/)                             |
-| Cycle 3        | Live dashboard                   | [`dashboard/cycle-3/`](dashboard/cycle-3/)                                                   |
-
----
-
-# 🧩 ER-CyRIS Mechanism
-
-The ER-CyRIS framework is organized around a hierarchical mechanism rather than a collection of independent technical components.
-
-The intended relationship is:
-
-```text
-Technical Artifact
-       ↓
-Cybersecurity Evidence
-       ↓
-Explainable Interpretation
-       ↓
-Risk Judgment
-       ↓
-Human Authority / Oversight
-       ↓
-Accountable Reliance
-       ↓
-Organizational Learning
-```
-
-Accordingly, the technical model is treated as a producer of evidence rather than as the final decision authority.
-
-The framework distinguishes between:
-
-1. **technical evidence generation**;
-2. **interpretation of evidence**;
-3. **risk judgment**;
-4. **human decision authority**;
-5. **accountability mechanisms**; and
-6. **organizational learning**.
-
-This distinction is central to the scientific argument of ER-CyRIS.
-
----
-
-# 🔄 M7 → M3 Feedback Boundary
-
-The relationship between **M7 and M3** is retained as a:
-
-> **Proposed Design-Level Feedback Path**
-
-This relationship represents a conceptual mechanism for using governance and operational feedback to inform subsequent refinement of the technical pipeline.
-
-The current research does **not** claim that the prototype has demonstrated:
-
-* automatic pruning;
-* automatic retraining;
-* autonomous model adaptation;
-* closed-loop adaptation; or
-* fully automated governance feedback.
-
-These mechanisms remain future implementation and validation directions unless explicitly supported by executed experiments.
-
-This boundary is maintained to distinguish the **implemented prototype** from the **proposed framework mechanism**.
-
----
-
-# 👥 Governance Expert Validation
-
-Technical validation and governance expert validation are treated as two different forms of evidence.
-
-### Technical Validation
-
-Technical validation evaluates whether the computational system can produce technically meaningful evidence, alerts, explanations, and performance measurements.
-
-### Governance Expert Validation
-
-Governance expert validation evaluates whether the proposed mechanisms for:
-
-* evidence interpretation;
-* risk judgment;
-* escalation;
-* human oversight;
-* override;
-* accountable reliance; and
-* organizational learning
-
-are considered reasonable and acceptable by relevant experts.
-
-The governance validation is therefore not interpreted simply as a percentage of agreement. Disagreement is treated as potentially valuable evidence for framework refinement.
-
-The intended refinement process is:
-
-```text
-Initial ER-CyRIS
-       ↓
-Expert Validation
-       ↓
-Agreement / Disagreement Analysis
-       ↓
-Identification of Weaknesses
-       ↓
-Framework Refinement
-       ↓
-Refined ER-CyRIS
-```
-
----
-
-# 🔐 Data Availability and Research Boundary
-
-This repository is designed to provide reproducible computational artifacts while respecting data confidentiality.
-
-Publicly shareable code, notebooks, documentation, and research artifacts may be included in the repository.
-
-Institutional security logs, identifiable academic-system records, expert-response datasets, credentials, API keys, and other sensitive materials are not publicly released.
-
-Where sensitive data are required to execute a particular experiment, the repository provides the corresponding computational logic or documentation without exposing the underlying confidential data.
-
-See [`docs/PUBLIC_DATA_BOUNDARY.md`](docs/PUBLIC_DATA_BOUNDARY.md).
-
----
-
-# 📊 Reproducibility
-
-The repository provides:
-
-* research notebooks;
-* source-code modules;
-* evaluation utilities;
-* environment requirements;
-* dashboard source;
-* validation instruments;
-* research documentation; and
-* supporting results.
-
-The notebooks document the computational workflow used during the corresponding research cycle, including the data-audit cells that report deduplication, conflicting-label handling, and partition composition.
-
-Exact reproduction of experiments involving institutional data may require access to the original controlled datasets and research environment.
-
----
-
-# ⚖️ Scientific Scope
-
-ER-CyRIS should not be interpreted as a claim that machine-learning predictions independently determine cybersecurity risk decisions.
-
-The framework instead investigates how technical evidence and explainable outputs can be incorporated into a broader mechanism in which authorized human actors retain responsibility for risk judgment and consequential decisions.
-
-The scientific contribution therefore lies in the mechanism connecting:
-
-**technical evidence → interpretation → risk judgment → accountable human reliance**
-
-rather than in the accumulation of independent machine-learning components.
-
----
-
-# 🎓 Dissertation Research Context
-
-ER-CyRIS is developed as part of doctoral research in Informatics with a focus on cybersecurity, explainable machine learning, digital transformation engineering, and accountable cybersecurity risk intelligence.
-
-**Researcher:** Fathoni Mahardika — Universitas Sebelas April, Sumedang, Indonesia
-**Doctoral programme:** Universitas Amikom Yogyakarta, Indonesia
-**Co-authors across all published outputs:** Ema Utami, Kusrini, Ferry Wahyu Wibowo — Universitas Amikom Yogyakarta, Indonesia
-
-The repository serves as a supporting research artifact and evidence trail for the dissertation.
-
----
-
-## 📝 How to Cite
-
-Please cite the published Cycle 1 article when referring to the weakness-mapping evidence, and the corresponding cycle article for other components. Full BibTeX entries are provided in [Publication Records](#-publication-records) below.
-
----
-
----
+The records below preserve the paper titles, bibliography and acceptance documentation. IJEECS metadata has been corrected to its published volume, pages and DOI.
 
 # 📑 Publication Records
 
@@ -640,20 +226,21 @@ Management · Cyber Threat Detection · Transparency · SHAP
 
 ### Cycle 2 (IJEECS)
 
-**Status:** 🕓 Accepted — scheduled for publication
+**Status:** ✅ Published — Vol. 43, No. 3, 2026, pp. 871–879
 
 **Title:** Dual View Explainability-aware Log Preprocessing for Robust Anomaly Detection toward ER-CyRIS
 
 **Journal:** IJEECS — Indonesian Journal of Electrical Engineering and Computer Science
 **Publisher:** Institute of Advanced Engineering and Science (IAES)
-**Accreditation / Indexing:** Sinta 1 · Scopus-indexed
+**Indexing:** Check current SINTA and Scopus records separately; publication is documented at the journal article page.
 **P-ISSN:** 2502-4752 · **E-ISSN:** 2502-4760
 **Paper ID:** #46518
 **Acceptance date:** 19 August 2026
-**Scheduled issue:** tentatively September 2026
-**Journal URL:** <https://ijeecs.iaescore.com/index.php/IJEECS>
+**Published in:** Vol. 43, No. 3 (2026), pp. 871–879
+**DOI:** [10.11591/ijeecs.v43.i3.pp871-879](https://doi.org/10.11591/ijeecs.v43.i3.pp871-879)
+**Article URL:** <https://ijeecs.iaescore.com/index.php/IJEECS/article/view/46518>
 
-**Contribution to ER-CyRIS.** Presents the dual-view (Semantic View + Contextual Deviation View) log preprocessing pipeline, the M0–M4 ablation across four datasets, and the Feature Stability Score (FSS) as a diagnostic stability criterion. This is the representation layer of the framework: it establishes that explanations are only trustworthy when the underlying feature representation is itself stable under perturbation.
+**Contribution to ER-CyRIS.** Presents the dual-view (Semantic View + Contextual Deviation View) log preprocessing pipeline, the M0–M4 ablation across four datasets, and the Feature Stability Score (FSS) as a diagnostic stability criterion. Its M0–M4 names are experimental preprocessing configurations, not the architectural M1–M4 defined in the subsequent framework design. FSS measures selected global feature-set overlap; it does not by itself establish local explanation fidelity or effectiveness of the complete framework.
 
 **Mapped repository artifacts:** [`cycle-2/`](cycle-2/)
 
@@ -666,7 +253,11 @@ Management · Cyber Threat Detection · Transparency · SHAP
              Detection toward {ER-CyRIS}},
   journal = {Indonesian Journal of Electrical Engineering and Computer Science},
   year    = {2026},
-  note    = {Accepted for publication, 19 August 2026. Paper ID \#46518},
+  volume  = {43},
+  number  = {3},
+  pages   = {871--879},
+  doi     = {10.11591/ijeecs.v43.i3.pp871-879},
+  url     = {https://ijeecs.iaescore.com/index.php/IJEECS/article/view/46518},
   issn    = {2502-4760}
 }
 ```
@@ -675,7 +266,7 @@ Management · Cyber Threat Detection · Transparency · SHAP
 
 ### Cycle 3 — In preparation
 
-Cycle 3 covers the integration of the ER-CyRIS framework, its institutional case study, the NIST SP 800-30 oriented risk mapping, near-real-time performance benchmarking, and the governance expert validation study.
+Cycle 3 contains an institutional prototype, scenario-oriented risk mapping, near-real-time benchmarking, and a separate governance instrument. These historical artifacts do not alone validate every interface of the current M1–M6 architecture, the revised M4 gate, or organizational risk and response effectiveness.
 
 Manuscript preparation is in progress. This section will be updated when a submission or acceptance record exists.
 
@@ -689,8 +280,9 @@ Manuscript preparation is in progress. This section will be updated when a submi
 | Research gap — explanation rarely reaches real-time risk decisions | SLR, second review | IEEE CITSM 2025 |
 | Problem evidence — detector fragility under realistic conditions | Cycle 1, first output | MATRIK |
 | Explainability — failure casebook and triage rationale | Cycle 1, second output | JUTIF |
-| Representation — dual-view preprocessing and stability diagnostics | Cycle 2 | IJEECS |
-| Integration, risk interpretation, and governance validation | Cycle 3 | In preparation |
+| Prior evidence — dual-view preprocessing and global feature-set stability diagnostics | Cycle 2 | IJEECS (published, 2026) |
+| M1–M6 architecture — interface and rule specification, including M5–M6 | Cycle 2 framework-design manuscript | In preparation; distinct from IJEECS |
+| Conditional framework evaluation with independently checked organizational records | Cycle 3 | Current prototype evidence is bounded; complete validation not established |
 ---
 
 ### Verification
@@ -698,7 +290,8 @@ Manuscript preparation is in progress. This section will be updated when a submi
 * the DOI resolvers for the three published outputs:
   <https://doi.org/10.1109/ICAISD68166.2025.11385757>,
   <https://doi.org/10.1109/CITSM67730.2025.11291277>, and
-  <https://doi.org/10.30812/matrik.v25i3.6147>;
+  <https://doi.org/10.30812/matrik.v25i3.6147>, and
+  <https://doi.org/10.11591/ijeecs.v43.i3.pp871-879>;
 * the IEEE Xplore record pages: <https://ieeexplore.ieee.org/document/11385757> and
   <https://ieeexplore.ieee.org/document/11291277>;
 * the journal article page: <https://journal.universitasbumigora.ac.id/matrik/article/view/6147>;
