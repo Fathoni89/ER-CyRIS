@@ -1,40 +1,11 @@
-# ER-CyRIS — Cycle 1
+# ER-CyRIS — Cycle 1 / Research Question 1
 
-## Technical Evidence and Operational Weakness Mapping
+Cycle 1 maps operational weaknesses under **specified** datasets, models and stress scenarios. It provides requirements for the later XAI framework; it does not test the current M1–M6 architecture end to end.
 
-Cycle 1 established the technical evidence base for ER-CyRIS through benchmark intrusion-detection experiments and operational-weakness analysis.
+- Public benchmark artifacts cover supervised XGBoost and Random Forest plus diagnostic anomaly methods, perturbations, SHAP interpretation and error cases.
+- W1–W6 are descriptive findings with domain and configuration boundaries. Noise-related F1 loss and elevated algorithmic alert rate must not be generalized to all conditions or described as measured analyst fatigue.
+- The archived metric column `PR_AUC` should be called **Average Precision (AP)** when its producing function is `average_precision_score`. Do not change archived values merely to relabel them.
 
-### Main research scope
+The [MATRIK article](https://doi.org/10.30812/matrik.v25i3.6147) and JUTIF manuscript (acceptance evidence in the [main README](../README.md)) are prior Cycle 1 outputs. The notebooks and results here remain historical research evidence, including earlier protocol choices. Recheck individual notebook splits and leakage controls before citing a result as a controlled holdout.
 
-- Public IDS datasets including CICIDS2018, CICIDS2017, UNSW-NB15, and RanSMAP.
-- Supervised and unsupervised models including XGBoost, Random Forest, Isolation Forest, DBSCAN, and KNN baseline.
-- Baseline performance, robustness/perturbation analysis, and cross-dataset/domain-shift evaluation.
-- Identification and mapping of operational weaknesses that motivate the subsequent research cycles.
-
-### Repository structure
-
-```text
-cycle-1/
-├── README.md
-├── notebooks/
-├── src/
-├── results/
-├── figures/
-└── environment/
-```
-
-### Important
-
-This directory is intended to contain the **actual Cycle 1 research artifacts** that were used in the dissertation.
-
-The current public package provides the folder structure and documentation. The original Cycle 1 notebook/source files should be placed in the corresponding directories before uploading to GitHub.
-
-Do not upload confidential institutional data, credentials, API keys, or restricted datasets.
-
-### Publication evidence
-
-Cycle 1 produced peer-reviewed outputs, including the MATRIK publication and the JUTIF publication/forthcoming output documented in the main repository README.
-
-### Relationship to later cycles
-
-Cycle 1 provides the technical evidence base and operational-weakness findings that motivate Cycle 2 and Cycle 3.
+Institutional raw logs, response records and credentials do not belong in a public reproduction package.
