@@ -18,7 +18,7 @@ This public copy preserves the computational code of the latest v3.5 UI build wh
 
 The live Cycle 3 dashboard is maintained separately from the source repository.
 
-**Live dashboard:** https://ercyris-siklus3-v3.fathoni-ee4.workers.dev/
+**Live dashboard:** https://ercyris-bukti-siklus3.fathoni-ee4.workers.dev/
 
 ## Governance validation boundary
 
