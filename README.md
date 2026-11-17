@@ -41,7 +41,7 @@ The unit of analysis moves from **observation → candidate alert → qualified 
 - [Cycle 1](cycle-1/): notebooks, stress tests, weakness mapping, figures and results.
 - [Cycle 2](cycle-2/): published preprocessing ablations plus later technical probes and fixed-protocol gate notebooks. Historical M0–M4 source files remain unchanged to preserve reproducibility.
 - [Cycle 3](cycle-3/): historical institutional v3.5 prototype, notebook, derived results, dashboard source and a separate governance instrument.
-- [Cycle 3 live dashboard](https://ercyris-siklus3-v3.fathoni-ee4.workers.dev/): presentation of historical prototype outputs; not a claim of full organizational validation.
+- [Cycle 3 live dashboard](https://ercyris-bukti-siklus3.fathoni-ee4.workers.dev/): presentation of historical prototype outputs; not a claim of full organizational validation.
 
 Some historical material uses the older **M1–M7** labels or an **M7 → M3** feedback arrow. They do not map one-to-one to the current M1–M6 modules, and the arrow does not demonstrate automatic retraining or a closed loop.
 
