@@ -1,0 +1,260 @@
+{
+  "status": "UNSW_FILE2_FROZEN_FINAL_NO_TUNING",
+  "reference_sha256": {
+    "file1": "7d851bbeabd27894ce39c8e78835c73341fc946652fb7743b9eff193b55eb511",
+    "manifest": "3cf3c6254b0e0fc356c73516f1a4c0ae009086eeb28c386b0ef00a5a49e532fe",
+    "v2": "2ebdc9eba62abdd9308b8bb80893836ac3ec1c36a7f9d05b73866db6b2ba4004",
+    "m2summary": "4126fefdf6645952e421850141765db33e6b27073d635b46949ee78b0fd2e959",
+    "m2csv": "baf524d4ce2188a01db22950f833f86dcd8a275d667cbce236b8f2ad47ec6ff8",
+    "m3summary": "9919dc6ee08a7c834dbaf84efc4aa022705f4e25e3ce8f6d89c1b4e7427b0006",
+    "m3csv": "956d9707b7a21a7d028efece7faf2dfe6334a99ae9eca1152150aaa04ca5a006"
+  },
+  "source_file2_sha256": "6130ad02873cc6069ae695cf2844f2e8c2e9a9a1b7532dd82ab8f202757cacf8",
+  "lock_protocol_id": "UNSW_C2_FILE2_V1",
+  "lock_manifest_sha256": "3cf3c6254b0e0fc356c73516f1a4c0ae009086eeb28c386b0ef00a5a49e532fe",
+  "source_file2_rows": 700001,
+  "selected_holdout_rows": 4500,
+  "holdout_context_audit": {
+    "file1_stime_minmax": [
+      1421927377.0,
+      1421955842.0
+    ],
+    "file2_stime_minmax": [
+      1421955795.0,
+      1424231129.0
+    ],
+    "stime_ranges_overlap": true,
+    "file1_host_count": 45,
+    "file2_host_count": 47,
+    "host_identifiers_shared": 43
+  },
+  "config": {
+    "train_seed": 42,
+    "synthetic_missing_fraction": 0.1,
+    "synthetic_missing_seed": 1043,
+    "detector_thresholds": {
+      "XGBoost": 0.2,
+      "RandomForest": 0.6
+    },
+    "gate_thresholds": {
+      "XGBoost": {
+        "tau_d": 0.9970916956663132,
+        "tau_x": 0.3855143586678332
+      },
+      "RandomForest": {
+        "tau_d": 0.8499999999999999,
+        "tau_x": 0.5280114576962448
+      }
+    },
+    "quality_veto": false,
+    "M2_probe_count_per_family": 12,
+    "independent_M3_probe_count": 2,
+    "source2_used_for_training_or_thresholds": false
+  },
+  "metrics": {
+    "XGBoost": {
+      "clean": {
+        "detector": {
+          "n": 4500,
+          "positive_count": 123,
+          "TP": 116,
+          "FP": 40,
+          "FN": 7,
+          "TN": 4337,
+          "F1": 0.8315412186379928,
+          "AP": 0.9536556737074532,
+          "FAR": 0.009138679460817912
+        },
+        "margin_only": {
+          "candidate_alerts": 156,
+          "accept": 71,
+          "warn": 85,
+          "abstain": 0,
+          "TP_accept": 70,
+          "FP_accept": 1,
+          "accept_coverage": 0.4551282051282051,
+          "true_alerts_not_accepted": 46
+        },
+        "two_domain_gate": {
+          "candidate_alerts": 156,
+          "accept": 71,
+          "warn": 85,
+          "abstain": 0,
+          "TP_accept": 70,
+          "FP_accept": 1,
+          "accept_coverage": 0.4551282051282051,
+          "true_alerts_not_accepted": 46
+        },
+        "q_e_completeness_mean_on_alerts": 0.9345557543231962,
+        "M2_mean_s_d_noise": 0.6452991452991452,
+        "M2_mean_s_d_missing": 0.9075854700854703,
+        "candidate_alerts_retain_both_new_probes": 66,
+        "margin_accept_retain_both_new_probes": 36,
+        "gate_accept_retain_both_new_probes": 36,
+        "SHAP_only_exclusions_after_margin": 0,
+        "SHAP_only_excluded_TP": 0,
+        "SHAP_only_excluded_FP": 0,
+        "mean_jaccard_given_stable_prediction": 0.5734164825073917
+      },
+      "synthetic_missing": {
+        "detector": {
+          "n": 4500,
+          "positive_count": 123,
+          "TP": 95,
+          "FP": 38,
+          "FN": 28,
+          "TN": 4339,
+          "F1": 0.7421875,
+          "AP": 0.8832523968250374,
+          "FAR": 0.008681745487777016
+        },
+        "margin_only": {
+          "candidate_alerts": 133,
+          "accept": 41,
+          "warn": 92,
+          "abstain": 0,
+          "TP_accept": 40,
+          "FP_accept": 1,
+          "accept_coverage": 0.3082706766917293,
+          "true_alerts_not_accepted": 55
+        },
+        "two_domain_gate": {
+          "candidate_alerts": 133,
+          "accept": 41,
+          "warn": 92,
+          "abstain": 0,
+          "TP_accept": 40,
+          "FP_accept": 1,
+          "accept_coverage": 0.3082706766917293,
+          "true_alerts_not_accepted": 55
+        },
+        "q_e_completeness_mean_on_alerts": 0.8499737716383983,
+        "M2_mean_s_d_noise": 0.6077694235588973,
+        "M2_mean_s_d_missing": 0.9104010025062658,
+        "candidate_alerts_retain_both_new_probes": 58,
+        "margin_accept_retain_both_new_probes": 24,
+        "gate_accept_retain_both_new_probes": 24,
+        "SHAP_only_exclusions_after_margin": 0,
+        "SHAP_only_excluded_TP": 0,
+        "SHAP_only_excluded_FP": 0,
+        "mean_jaccard_given_stable_prediction": 0.5888852526783561
+      }
+    },
+    "RandomForest": {
+      "clean": {
+        "detector": {
+          "n": 4500,
+          "positive_count": 123,
+          "TP": 114,
+          "FP": 24,
+          "FN": 9,
+          "TN": 4353,
+          "F1": 0.8735632183908046,
+          "AP": 0.9552776185635089,
+          "FAR": 0.0054832076764907475
+        },
+        "margin_only": {
+          "candidate_alerts": 138,
+          "accept": 62,
+          "warn": 76,
+          "abstain": 0,
+          "TP_accept": 61,
+          "FP_accept": 1,
+          "accept_coverage": 0.4492753623188406,
+          "true_alerts_not_accepted": 53
+        },
+        "two_domain_gate": {
+          "candidate_alerts": 138,
+          "accept": 62,
+          "warn": 75,
+          "abstain": 1,
+          "TP_accept": 61,
+          "FP_accept": 1,
+          "accept_coverage": 0.4492753623188406,
+          "true_alerts_not_accepted": 53
+        },
+        "q_e_completeness_mean_on_alerts": 0.9354566902595215,
+        "M2_mean_s_d_noise": 0.6413043478260869,
+        "M2_mean_s_d_missing": 0.9299516908212561,
+        "candidate_alerts_retain_both_new_probes": 70,
+        "margin_accept_retain_both_new_probes": 47,
+        "gate_accept_retain_both_new_probes": 47,
+        "SHAP_only_exclusions_after_margin": 0,
+        "SHAP_only_excluded_TP": 0,
+        "SHAP_only_excluded_FP": 0,
+        "mean_jaccard_given_stable_prediction": 0.6106013034584461
+      },
+      "synthetic_missing": {
+        "detector": {
+          "n": 4500,
+          "positive_count": 123,
+          "TP": 97,
+          "FP": 26,
+          "FN": 26,
+          "TN": 4351,
+          "F1": 0.7886178861788617,
+          "AP": 0.9012465966807645,
+          "FAR": 0.005940141649531642
+        },
+        "margin_only": {
+          "candidate_alerts": 123,
+          "accept": 22,
+          "warn": 101,
+          "abstain": 0,
+          "TP_accept": 22,
+          "FP_accept": 0,
+          "accept_coverage": 0.17886178861788618,
+          "true_alerts_not_accepted": 75
+        },
+        "two_domain_gate": {
+          "candidate_alerts": 123,
+          "accept": 22,
+          "warn": 100,
+          "abstain": 1,
+          "TP_accept": 22,
+          "FP_accept": 0,
+          "accept_coverage": 0.17886178861788618,
+          "true_alerts_not_accepted": 75
+        },
+        "q_e_completeness_mean_on_alerts": 0.8515787483456227,
+        "M2_mean_s_d_noise": 0.5291327913279134,
+        "M2_mean_s_d_missing": 0.8834688346883469,
+        "candidate_alerts_retain_both_new_probes": 44,
+        "margin_accept_retain_both_new_probes": 16,
+        "gate_accept_retain_both_new_probes": 16,
+        "SHAP_only_exclusions_after_margin": 0,
+        "SHAP_only_excluded_TP": 0,
+        "SHAP_only_excluded_FP": 0,
+        "mean_jaccard_given_stable_prediction": 0.6366587957497049
+      }
+    }
+  },
+  "per_instance_count": 550,
+  "per_instance_csv_sha256": "88fa164af6880964f13f846f2746320fe868fa8b26bbfd56324f162c4b329595",
+  "evaluation_seconds_only": {
+    "XGBoost": {
+      "clean": 0.2707618499999853,
+      "synthetic_missing": 0.2059653530000105
+    },
+    "RandomForest": {
+      "clean": 2.519842627999992,
+      "synthetic_missing": 2.308786886000007
+    }
+  },
+  "runtime": {
+    "python": "3.13.15",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "sklearn": "1.6.1",
+    "xgboost": "3.4.1",
+    "shap": "0.52.0"
+  },
+  "limitations": [
+    "Holdout measures limited file transfer, not independent host or time deployment",
+    "Clean and 10 percent synthetic-missing outcomes share the same source rows",
+    "M2 robustness scores are diagnostics, not calibrated correctness",
+    "M3 Jaccard is a synthetic consistency measure on transformed feature indices, not explanation fidelity or raw-field meaning",
+    "No provenance validation for M1, no organizational risk/response validation M5/M6",
+    "Any change proposed after this file2 result needs a genuinely new test set"
+  ]
+}
